@@ -54,7 +54,7 @@ export function SideNavigation({ sections = navSections }: SideNavigationProps) 
   };
 
   return (
-    <aside className="fixed left-6 sm:left-8 lg:left-12 top-1/2 -translate-y-1/2 z-40 hidden md:block">
+    <aside className="hidden md:fixed md:block md:left-8 lg:left-12 md:top-1/2 md:-translate-y-1/2 z-40">
       {/* Navigation Links */}
       <nav ref={navRef} className="relative space-y-3 text-sm leading-6">
         {/* Animated indicator bar */}
