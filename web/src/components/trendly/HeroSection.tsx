@@ -74,69 +74,96 @@ export function HeroSection() {
           </div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-[1fr_1fr] gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left content */}
-          <div className="space-y-10">
+          <div className="space-y-8 pt-4">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="font-display text-5xl sm:text-6xl lg:text-7xl font-light text-white leading-[1.05]"
+              className="font-display text-5xl sm:text-6xl lg:text-6xl font-light text-white leading-[1.1]"
             >
               De R$0 a{" "}
               <span className="text-emerald-400">R$100k</span>
               <br />
-              <span className="text-neutral-500">em 6 meses</span>
+              <span className="text-neutral-500 text-5xl">em 6 meses</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-lg text-neutral-300 max-w-xl leading-relaxed"
+              className="text-base text-neutral-300 max-w-lg leading-relaxed"
             >
               Como transformei um especialista invisível em autoridade digital: estratégia de conteúdo, funil de vendas e IA gerando receita real.
             </motion.p>
 
+            {/* Stats cards - inline with left content */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="pt-4 space-y-4"
+              className="grid grid-cols-3 gap-3 pt-2"
+            >
+              {heroStats.map((stat, idx) => {
+                const Icon = stat.icon;
+                return (
+                  <div
+                    key={stat.label}
+                    className="p-4 rounded-xl bg-gradient-to-br from-neutral-900 to-neutral-950 ring-1 ring-white/10 hover:ring-emerald-500/30 transition-all duration-300 group"
+                  >
+                    <Icon className="w-4 h-4 text-emerald-400 mb-2 group-hover:scale-110 transition-transform" />
+                    <p className="text-lg font-light text-white mb-0.5">
+                      {stat.value}
+                    </p>
+                    <p className="text-xs text-neutral-400">
+                      {stat.label}
+                    </p>
+                  </div>
+                );
+              })}
+            </motion.div>
+
+            {/* Client info */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="pt-2 space-y-3 border-t border-white/10"
             >
               <div className="flex items-center gap-3">
-                <div className="w-1 h-8 bg-emerald-400 rounded-full" />
-                <p className="text-neutral-400">
+                <div className="w-1 h-6 bg-emerald-400 rounded-full" />
+                <p className="text-neutral-400 text-sm">
                   <span className="font-medium text-white">Alfredo Novais</span> — Especialista em Comércio Exterior
                 </p>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 ml-4">
                 <a
                   href="https://www.instagram.com/alfredonovais/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-pink-600/20 hover:bg-pink-600/40 transition-colors"
+                  className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-pink-600/20 hover:bg-pink-600/40 transition-colors flex-shrink-0"
                 >
-                  <Instagram className="w-4 h-4 text-pink-500" />
+                  <Instagram className="w-3.5 h-3.5 text-pink-500" />
                 </a>
-                <p className="text-sm text-neutral-400">
-                  10k seguidores • 2.5% engajamento • R$100k em mentoria
+                <p className="text-xs text-neutral-400">
+                  10k seguidores • 2.5% engajamento • R$100k mentoria
                 </p>
               </div>
             </motion.div>
           </div>
 
-          {/* Right content - Image + Stats */}
-          <div className="space-y-6">
+          {/* Right content - Only Image */}
+          <div className="pt-4">
             <ParallaxElement speed={0.08}>
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="relative space-y-6"
+                className="relative"
               >
                 {/* Professional image */}
-                <div className="relative aspect-[3/4] rounded-3xl overflow-hidden group">
+                <div className="relative aspect-[3/4] rounded-3xl overflow-hidden group mb-6">
                   <Image
                     src="/media/trendly/trendly_hero.jpeg"
                     alt="Professional Marketing"
@@ -145,7 +172,7 @@ export function HeroSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/60 via-transparent to-transparent" />
 
-                  {/* Overlay badge - redesigned */}
+                  {/* Overlay badge */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -157,41 +184,12 @@ export function HeroSection() {
                         <div className="w-2 h-2 rounded-full bg-emerald-400" />
                         <p className="text-xs text-emerald-400 font-medium">Resultados Alcançados</p>
                       </div>
-                      <p className="text-xl font-light text-white">
+                      <p className="text-lg font-light text-white">
                         De invisível a autoridade
                       </p>
                     </div>
                   </motion.div>
                 </div>
-
-                {/* Stats card - redesigned for better visual hierarchy */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.6 }}
-                  className="grid grid-cols-3 gap-4"
-                >
-                  {heroStats.map((stat, idx) => {
-                    const Icon = stat.icon;
-                    return (
-                      <div
-                        key={stat.label}
-                        className="p-5 rounded-2xl bg-gradient-to-br from-neutral-900 to-neutral-950 ring-1 ring-white/10 hover:ring-emerald-500/30 transition-all duration-300 group cursor-default"
-                      >
-                        <div className="flex items-center justify-between mb-3">
-                          <Icon className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" />
-                          <div className="w-6 h-6 rounded-full bg-emerald-400/10 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </div>
-                        <p className="text-2xl font-light text-white mb-1">
-                          {stat.value}
-                        </p>
-                        <p className="text-xs text-neutral-400 leading-tight">
-                          {stat.label}
-                        </p>
-                      </div>
-                    );
-                  })}
-                </motion.div>
               </motion.div>
             </ParallaxElement>
           </div>
