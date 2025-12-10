@@ -17,7 +17,7 @@ export function ResultsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="space-y-4 text-center"
+            className="space-y-8 text-center"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 ring-1 ring-white/10">
               <span className="text-sm text-neutral-300">Os Resultados</span>
