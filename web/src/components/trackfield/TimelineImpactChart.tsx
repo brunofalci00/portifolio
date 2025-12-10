@@ -100,22 +100,6 @@ export function TimelineImpactChart() {
         </AreaChart>
       </ResponsiveContainer>
 
-      {/* Hand-drawn circle on milestone (Semana 8) - ELEMENTO 2/3 */}
-      <svg className="absolute bottom-8 right-12 w-16 h-16 pointer-events-none opacity-60">
-        <motion.circle
-          cx="32"
-          cy="32"
-          r="28"
-          stroke="#10b981"
-          strokeWidth="2"
-          fill="none"
-          strokeDasharray="3,2"
-          initial={{ pathLength: 0, rotate: -90 }}
-          whileInView={{ pathLength: 1, rotate: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 2.5, duration: 1, ease: "easeOut" }}
-        />
-      </svg>
     </motion.div>
   );
 }
