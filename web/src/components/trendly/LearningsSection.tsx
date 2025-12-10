@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
-  Lightbulb,
   Fingerprint,
   Cpu,
   Search,
@@ -171,25 +170,6 @@ export function LearningsSection() {
                   className={`object-cover grayscale brightness-[0.7] hover:grayscale-[20%] hover:brightness-100 transition-all duration-500 ${imageShadow}`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent" />
-
-                {/* Overlay info */}
-                <div className="absolute bottom-0 left-0 right-0 p-5">
-                  <div className="p-4 rounded-xl bg-neutral-950/80 backdrop-blur-sm ring-1 ring-white/10">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center">
-                        <Lightbulb className="w-5 h-5 text-emerald-400" />
-                      </div>
-                      <div>
-                        <p className="text-white font-medium">
-                          Conhecimento aplicado
-                        </p>
-                        <p className="text-sm text-neutral-500">
-                          Teoria → Prática → Resultado
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
 
               {/* Floating badge */}
