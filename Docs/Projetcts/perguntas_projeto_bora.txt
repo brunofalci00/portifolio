@@ -1,0 +1,131 @@
+PERGUNTAS SOBRE O APP DE HÁBITO
+1. CONTEXTO & VISÃO
+1.1 - Qual era o problema/oportunidade que o app resolveria?
+Qual era a dor do usuário que você identificou?
+Por que você decidiu construir este app específico?
+Havia outros apps similares? Como você se diferenciava?
+1.2 - Quando você começou a trabalhar neste projeto?
+Data de início?
+Quanto tempo levou até o lançamento?
+Quanto tempo tem desde o lançamento até agora?
+1.3 - Qual é o modelo de negócio?
+É gratuito, freemium, pago?
+Se pago, qual é o preço?
+Qual é a fonte de receita?
+2. PRODUTO & DESENVOLVIMENTO
+2.1 - Qual é a stack técnica do app?
+Frontend: React Native, Flutter, Swift, Kotlin?
+Backend: Node.js, Python, Java?
+Banco de dados: Firebase, PostgreSQL, MongoDB?
+Hospedagem: AWS, Google Cloud, Heroku?
+2.2 - Quais são as principais features do app?
+Listar as 5-10 features principais
+Qual é a feature mais diferenciadora?
+Há features que você ainda quer adicionar?
+2.3 - Qual é o fluxo de usuário principal?
+Como um novo usuário começa?
+Qual é o caminho até o "aha moment" (momento de perceber o valor)?
+Qual é o fluxo de retenção?
+2.4 - Como você abordou o UX/UI?
+Você fez pesquisa de usuário antes de construir?
+Qual foi o processo de design?
+Você iterou o design baseado em feedback de usuários?
+3. USUÁRIOS & CRESCIMENTO
+3.1 - Qual é o seu público-alvo?
+Perfil demográfico? (idade, profissão, etc.)
+Perfil psicográfico? (valores, motivações, etc.)
+Qual é o tamanho do mercado?
+3.2 - Como você chegou aos 100+ usuários?
+Qual foi a estratégia de aquisição?
+Qual foi o crescimento mês a mês?
+Qual é a taxa de retenção?
+Qual é a taxa de churn?
+3.3 - Qual é o custo de aquisição de usuário (CAC)?
+Quanto você gastou em marketing?
+Qual foi o ROI?
+3.4 - Qual é o feedback dos usuários?
+Qual é a avaliação no app store? (rating)
+Qual é o feedback mais comum?
+Qual é o feedback negativo mais comum?
+4. MÉTRICAS & PERFORMANCE
+4.1 - Quais são as principais métricas do app?
+DAU (Daily Active Users)?
+MAU (Monthly Active Users)?
+Tempo médio de sessão?
+Frequência de uso?
+Taxa de retenção (Day 1, Day 7, Day 30)?
+4.2 - Qual é a performance técnica?
+Qual é o tempo de carregamento?
+Qual é a taxa de crash?
+Qual é o tamanho do app?
+Qual é o consumo de bateria/dados?
+4.3 - Qual é a monetização?
+Qual é o ARPU (Average Revenue Per User)?
+Qual é o LTV (Lifetime Value)?
+Qual é a taxa de conversão para pago (se aplicável)?
+5. DESAFIOS & APRENDIZADOS
+5.1 - Quais foram os maiores desafios técnicos?
+Qual foi o desafio mais difícil de resolver?
+Como você resolveu?
+O que você aprendeu?
+5.2 - Quais foram os maiores desafios de produto?
+Qual feature foi mais difícil de definir?
+Como você decidiu o que priorizar?
+Qual feature você removeu ou pivotou?
+5.3 - Quais foram os maiores desafios de crescimento?
+Como você adquiriu os primeiros usuários?
+Qual foi o maior obstáculo para crescimento?
+Como você superou?
+5.4 - Se pudesse voltar no tempo, o que faria diferente?
+Qual foi o maior erro?
+O que você aprendeu com esse erro?
+6. GESTÃO & INFRAESTRUTURA
+6.1 - Como você gerencia o app?
+Você usa alguma ferramenta de analytics? (Amplitude, Mixpanel, Firebase Analytics)
+Você usa alguma ferramenta de feedback? (Intercom, Zendesk)
+Você usa alguma ferramenta de CI/CD? (GitHub Actions, GitLab CI)
+6.2 - Como é o processo de desenvolvimento?
+Você segue alguma metodologia? (Agile, Kanban, etc.)
+Qual é o ciclo de release?
+Como você testa antes de lançar?
+6.3 - Como você gerencia a infraestrutura?
+Qual é o custo mensal de hospedagem/infraestrutura?
+Como você escala conforme cresce?
+Qual é o uptime?
+7. VISÃO FUTURA
+7.1 - Qual é o roadmap do app?
+Quais são as próximas features?
+Qual é o objetivo para os próximos 6-12 meses?
+Qual é a visão de longo prazo?
+7.2 - Qual é o seu objetivo com este app?
+É um projeto de aprendizado?
+É um negócio que você quer escalar?
+É um portfólio para demonstrar skills?
+É uma combinação?
+8. CONTEXTO PESSOAL
+8.1 - Por que você construiu este app?
+Qual foi a motivação inicial?
+O que você aprendeu construindo?
+Como isso te preparou para outros projetos?
+8.2 - Qual é o seu papel no projeto?
+Você é o único desenvolvedor?
+Você tem um time?
+Qual é a sua responsabilidade específica? (Você mencionou "gestão de métricas, construção, UX, UI, performance, otimização, features, desenvolvimento, banco de dados, infraestrutura")
+RESUMO DAS PERGUNTAS
+Para ser mais direto, aqui estão as perguntas mais críticas:
+ESSENCIAL:
+Qual é o problema que o app resolve?
+Quando começou e quanto tempo levou para lançar?
+Qual é o modelo de negócio? (Gratuito, freemium, pago)
+Qual é a stack técnica?
+Quais são as 5 principais features?
+Como você chegou aos 100+ usuários? (Estratégia de aquisição)
+Qual é a taxa de retenção?
+Qual é o feedback dos usuários? (Rating, comentários)
+Qual foi o maior desafio e como você resolveu?
+Se pudesse voltar, o que faria diferente?
+IMPORTANTE:
+11. Qual é o seu objetivo com este app? (Negócio, aprendizado, portfólio?)
+12. Qual é o roadmap futuro?
+Responda essas perguntas (as essenciais no mínimo) e vamos criar um case study tão impactante quanto o do Trendly, mas focado em Product Building, Full-Stack Development e Gestão de Produto.
+Aguardando suas respostas! 🚀

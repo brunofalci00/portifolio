@@ -1,0 +1,12 @@
+﻿*** Begin Patch
+*** Update File: page.tsx
+@@
+-import CardFlip from "@/components/kokonutui/card-flip";
+-import MouseEffectCard from "@/components/kokonutui/mouse-effect-card";
+-import TypewriterText from "@/components/smoothui/typewriter-text";
+-import CursorFollow from "@/components/smoothui/cursor-follow";
++import CardFlip from "@/components/kokonutui/card-flip";
++import TypewriterText from "@/components/smoothui/typewriter-text";
++import { Button } from "@/components/ui/button";
++import { Card, CardContent } from "@/components/ui/card";
+*** End Patch

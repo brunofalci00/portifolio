@@ -1,0 +1,124 @@
+Blueprint do Case Study: Zippi (Reviews/Comunidade)
+O título de impacto será: "Empatia com o Usuário: Gestão de Comunidade e Melhoria de Reviews de App".
+SEÇÃO 1: HERO/INTRO (A Crise de Confiança)
+O foco é capturar a atenção com a dramaticidade da situação inicial (nota baixa) e o impacto do resultado.
+Elemento
+Conteúdo Proposto
+Justificativa Estratégica
+Título Principal (H1)
+De 3.5 para 4.5 Estrelas: Resgatando a Confiança do Usuário através da Comunidade
+Destaca o resultado quantificável mais impactante (aumento de 1.0 estrela) e o foco Customer-Centric.
+Subtítulo/Proposição
+Gestão 360º de Reviews e Feedback Loop: +70% em Reviews Positivos e Mitigação de Sentimento Negativo.
+Enfatiza a execução completa e a conexão com a Retention e Customer Success.
+Contexto Rápido
+"A Zippi, uma fintech em crescimento, precisava de credibilidade e confiança. Com a nota média de reviews em 3.5, o canal orgânico e a aquisição de novos leads eram afetados. Meu desafio foi estruturar uma gestão de comunidade ativa para transformar reviews negativos em insights de produto e, crucialmente, elevar a nota média, posicionando a Zippi como autoridade de confiança."
+Estabelece o contexto (Situation) e a importância da empatia com usuários.
+KPIs de Destaque
+Nota Média: 3.5 → 4.5 / Crescimento: +70% em Reviews Positivos / Foco: Credibilidade de Marca e Aquisição de Leads.
+
+--------------------------------------------------------------------------------
+SEÇÃO 2: SITUAÇÃO E OPORTUNIDADE (O Problema e O Usuário)
+Esta seção demonstra capacidade de pesquisa e customer insights, identificando a raiz da nota baixa.
+Elemento
+Conteúdo Proposto (Baseado nas Respostas)
+Justificativa Estratégica
+H2
+A Dor do Usuário: Falta de Retorno na Análise de Crédito e Fricção
+A Situação Inicial
+A nota média dos reviews na Apple Store e Google Play era 3.5. O principal fator que causava a fricção e as notas baixas era a falta de respostas sobre análise de crédito e o sentimento de taxas de juros altas.
+Descreve a Situation com dados e o pain point do usuário (O Problema e O Usuário).
+O Objetivo de Negócio
+A gestão de comunidade era essencial para a Zippi por ser uma fintech menos conhecida, ajudando na aquisição de novos leads. O objetivo era mitigar o sentimento negativo na mídia e aumentar a confiança e segurança perante os novos leads.
+Conecta a ação tática (reviews) ao objetivo estratégico (GTM e Aquisição).
+Foco da Comunidade
+A gestão da comunidade permeava em torno de feedback e suporte. Era necessário transformar a percepção pública da marca.
+
+--------------------------------------------------------------------------------
+SEÇÃO 3: TAREFA E OBJETIVOS (Task)
+Define o desafio SMART (Specific, Measurable, Achievable, Relevant, Time-bound) e o seu papel de gestão.
+Elemento
+Conteúdo Proposto (Baseado nas Respostas)
+Justificativa Estratégica
+H2
+A Meta: Elevar a Nota Média de 3.5 para 4.5 Estrelas em 6 Meses
+Definição da Meta
+A meta SMART estabelecida foi aumentar a nota média de 3.5 para 4.5 estrelas em 6 meses.
+Define claramente o Task e o resultado esperado.
+KPIs de Sucesso
+Monitoramos volumes de reviews positivos e negativos, a análise de sentimento e, crucialmente, a taxa de respostas aos reviews.
+Foca em métricas de Performance e Iteração.
+O Meu Papel
+Meu papel foi de gerenciamento de comunidade, responsável por toda a estrutura de feedback loop. Isso incluiu o mapeamento de pontos específicos na jornada para contato com leads e a análise de testes A/B e fluxos para otimizar o projeto.
+Clarifica sua contribuição específica no projeto de grupo, evitando a ambiguidade.
+
+--------------------------------------------------------------------------------
+SEÇÃO 4: AÇÃO E ESTRATÉGIA (Action & O Processo)
+Detalha as ações de Community Management e o processo de pensamento para influenciar a Retention e Customer Success.
+Elemento
+Conteúdo Proposto (Baseado nas Respostas)
+Skills Reforçadas
+H2
+A Estrutura Customer-Centric: Mapeamento de Gatilhos Mentais e Gestão 360º
+A Hipótese e a Análise (O Processo)
+A análise partiu da hipótese de que poderíamos aumentar os reviews positivos ao mapear pontos específicos da jornada em que o usuário estivesse com um sentimento feliz ou um gatilho mental grato. Aplicamos metodologias de Growth, como Testes A/B, para otimizar os fluxos de solicitação de avaliação.
+Análise de Funil e Experimentação Sistemática.
+A Ação de Mitigação (Acolhimento)
+Para lidar com o problema constante da falta de retorno sobre a análise de crédito, a ação imediata (que não dependia de Produto/Tech) foi implementar uma gestão de comunidade ativa 360 para acolher ao máximo os leads perdidos e produzir conteúdo direcionado para eles, garantindo que se sentissem ouvidos.
+Demonstra Storytelling & Comunicação (mitigar sentimento) e alta empatia com usuários.
+Incentivo a Reviews Positivos
+Reviews positivas eram incentivadas em "momentos Aha" — momentos em que o usuário estava feliz, como ao receber um aumento de crédito — explorando o gatilho mental de reciprocidade.
+Estratégias de Retention e Advocacy (no funil AARRR).
+Trabalho Cross-Functional
+Colaborei ativamente com as equipes de Growth e CX (Customer Experience). Foram gerados relatórios semanais detalhados de acompanhamento dos principais feedbacks para influenciar as áreas de Produto e CX.
+Evidencia trabalho cross-functional e o uso de insights para o roadmap de produto.
+
+--------------------------------------------------------------------------------
+SEÇÃO 5: RESULTADO E IMPACTO (Result)
+Apresenta os resultados mensuráveis que demonstram o sucesso da intervenção customer-centric.
+Elemento
+Conteúdo Proposto (Baseado nas Respostas)
+Significado Estratégico (Guia)
+H2
+O Outcome: Aumento de 1.0 Estrela e Geração de Insights de Produto
+Resultado de Reputação
+A meta foi atingida: a nota média de reviews do app na Play Store subiu de 3.5 para 4.5.
+Comprova o outcome mensurável do projeto.
+Crescimento de Reviews Positivos
+Houve um aumento percentual de 70% no volume de reviews positivos.
+Valida a estratégia de mapeamento de Aha Moments e Advocacy.
+Impacto no Negócio (Aquisição)
+A melhoria na nota resultou em maior taxa de download do app, o que impacta diretamente a Aquisição de novos leads.
+Conecta Retention/Reviews com Acquisition/GTM.
+Impacto no Produto (Iteração)
+Geramos insights adicionais sobre pontos negativos dentro do app, que foram repassados para as áreas de Produto e CX para serem trabalhados.
+Demonstra iteração e uso de dados para informar o roadmap.
+
+--------------------------------------------------------------------------------
+SEÇÃO 6: APRENDIZADOS E REFLEXÃO (Learning)
+Oportunidade para demonstrar maturidade profissional e a consolidação da filosofia Customer-Centric.
+Elemento
+Conteúdo Proposto (Baseado nas Respostas)
+Conexão com o Perfil
+H2
+A Maior Lição: Colocar o Cliente no Centro de Tudo
+O Maior Aprendizado
+Meu maior aprendizado foi que "não existe uma solução, um produto, uma empresa que não trabalhe com o cliente no centro do produto da empresa". A lição é olhar a todo momento para o cliente, ouvi-lo de forma ativa e colocá-lo sempre no centro.
+Consolida a sua "Grande Ideia" Customer-Centric.
+O Maior Desafio
+O maior desafio foi ter que lidar com barreiras técnicas que dependiam de outras áreas e ter que contorná-las sem depender delas para solucionar problemas.
+Demonstra Adaptabilidade e Resolução de Problemas.
+O que Faria Diferente
+Se eu pudesse recomeçar, faria estudos e projeções de impacto do projeto para áreas paralelas. Isso as faria olhar "com mais carinho" para o projeto e trabalhar junto para otimizar ainda mais os resultados.
+Demonstra visão estratégica e a necessidade de ganhar buy-in (stakeholder management) para trabalho cross-functional.
+Conclusão (A Progressão)
+Este foi meu primeiro projeto de gestão de comunidade ativa, e ele solidificou minha crença de que "precisamos nos colocar no lugar do cliente antes de qualquer feature ou solução nova".
+Conecta o projeto Zippi (Reviews) com a sua evolução de habilidades.
+
+--------------------------------------------------------------------------------
+Elementos Visuais
+Visto que você precisa criar os gráficos, a seção deve ter:
+1. Gráfico de Evolução: Um gráfico de linha simples mostrando a evolução da nota média ao longo dos 6 meses (3.5 para 4.5).
+2. Ícones de Reputação: Ícones de 5 estrelas em destaque no resultado final.
+3. Pull Quote (Simulado): Uma citação que demonstre a dor inicial ("Fui negado e não tive resposta") e uma que mostre o sucesso ("Melhor atendimento ao cliente que já vi!").
+A página do projeto Zippi (Reviews/Comunidade) está agora completa, demonstrando com sucesso sua competência em Gestão de Clientes, Empatia com Usuários e Growth (Retention/Advocacy).
