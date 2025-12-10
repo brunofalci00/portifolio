@@ -3,9 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Users, CheckCircle, Clock } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Users, CheckCircle, Clock } from "lucide-react";
 import { ParallaxElement } from "@/components/scroll/ParallaxElement";
 
 const heroStats = [
@@ -71,9 +69,9 @@ export function HeroSection() {
           </div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-[1.3fr_0.7fr] gap-12 items-start">
-          {/* Left content */}
-          <div className="space-y-8">
+        <div className="space-y-12">
+          {/* Main heading and description */}
+          <div className="max-w-3xl mx-auto text-center space-y-6">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -88,7 +86,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-xl text-neutral-400 max-w-2xl"
+              className="text-xl text-neutral-400"
             >
               Como eu construí um app de hábitos — do Figma ao código, do design
               ao deploy — e validei a ideia com usuários reais.
@@ -98,115 +96,76 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-neutral-500 max-w-2xl"
+              className="text-neutral-500"
             >
               Apps de hábitos costumam ser complicados demais. Eu queria criar
               algo diferente: simples, bonito e que realmente ajudasse as
               pessoas. O resultado? Mais de 100 usuários usando em menos de um mês.
             </motion.p>
-
-            {/* Tech badges */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="flex flex-wrap gap-2"
-            >
-              {["React", "TypeScript", "Supabase", "PWA", "Figma"].map(
-                (tech, idx) => (
-                  <span
-                    key={tech}
-                    className="px-3 py-1.5 text-sm rounded-full bg-neutral-900/60 ring-1 ring-white/10 text-neutral-300"
-                  >
-                    {tech}
-                  </span>
-                )
-              )}
-            </motion.div>
-
-            {/* CTA buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="flex flex-wrap gap-4 pt-4"
-            >
-              <Button
-                asChild
-                className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full px-6"
-              >
-                <Link href="/#contato">
-                  Vamos conversar
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
-              <Button
-                variant="outline"
-                asChild
-                className="rounded-full border-white/10 hover:bg-white/5"
-              >
-                <Link href="/#projetos">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Voltar
-                </Link>
-              </Button>
-            </motion.div>
           </div>
 
-          {/* Right content - Stats card + Image */}
-          <div className="space-y-6">
-            <ParallaxElement speed={0.08}>
-              <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="relative"
-              >
-                {/* App mockup image */}
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6">
-                  <Image
-                    src="/media/projects/bora/portifolio-11.png"
-                    alt="Bora App - Interface Principal"
-                    fill
-                    className={`object-cover grayscale brightness-[0.7] hover:grayscale-[20%] hover:brightness-100 transition-all duration-500 ${imageShadow}`}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent" />
+          {/* Metrics cards - centered and distributed horizontally */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="flex justify-center"
+          >
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl w-full">
+              {heroStats.map((stat, idx) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.5 + idx * 0.1 }}
+                  className="group relative p-5 rounded-2xl bg-neutral-900/60 ring-1 ring-white/10 hover:ring-emerald-500/30 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+                >
+                  {/* Background glow on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 via-emerald-500/5 to-emerald-500/0 opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                  {/* Overlay badge */}
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <div className="p-4 rounded-xl bg-neutral-950/80 backdrop-blur-sm ring-1 ring-white/10">
-                      <p className="text-sm text-neutral-400 mb-1">Do Figma ao Deploy</p>
-                      <p className="text-white font-medium">26 dias de desenvolvimento</p>
+                  <div className="relative flex flex-col items-center text-center">
+                    <div className="p-3 rounded-xl bg-emerald-500/10 ring-1 ring-emerald-500/20 group-hover:bg-emerald-500/20 transition-colors mb-3">
+                      <stat.icon className="w-5 h-5 text-emerald-400" />
                     </div>
+                    <p className="text-3xl font-light text-white mb-1">
+                      {stat.value}
+                    </p>
+                    <p className="text-sm text-neutral-400">
+                      {stat.label}
+                    </p>
                   </div>
-                </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
 
-                {/* Stats card */}
-                <div className="p-6 rounded-2xl bg-neutral-900/60 ring-1 ring-white/10 backdrop-blur-sm">
-                  <p className="text-sm text-neutral-500 mb-4">Métricas principais</p>
-                  <div className="grid grid-cols-3 gap-4">
-                    {heroStats.map((stat, idx) => (
-                      <motion.div
-                        key={stat.label}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4, delay: 0.5 + idx * 0.1 }}
-                        className="text-center p-3 rounded-xl bg-neutral-950/50 ring-1 ring-white/5"
-                      >
-                        <stat.icon className="w-5 h-5 text-emerald-400 mx-auto mb-2" />
-                        <p className="text-2xl font-light text-white">
-                          {stat.value}
-                        </p>
-                        <p className="text-xs text-neutral-500 mt-1">
-                          {stat.label}
-                        </p>
-                      </motion.div>
-                    ))}
+          {/* App mockup image - full width below */}
+          <ParallaxElement speed={0.08}>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="relative max-w-2xl mx-auto"
+            >
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
+                <Image
+                  src="/media/projects/bora/portifolio-11.png"
+                  alt="Bora App - Interface Principal"
+                  fill
+                  className={`object-cover grayscale brightness-[0.7] hover:grayscale-[20%] hover:brightness-100 transition-all duration-500 ${imageShadow}`}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent" />
+
+                {/* Overlay badge */}
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="p-4 rounded-xl bg-neutral-950/80 backdrop-blur-sm ring-1 ring-white/10">
+                    <p className="text-sm text-neutral-400 mb-1">Do Figma ao Deploy</p>
+                    <p className="text-white font-medium">26 dias de desenvolvimento</p>
                   </div>
                 </div>
-              </motion.div>
-            </ParallaxElement>
-          </div>
+              </div>
+            </motion.div>
+          </ParallaxElement>
         </div>
       </div>
     </section>
