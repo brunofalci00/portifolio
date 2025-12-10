@@ -17,13 +17,13 @@ const resultados = [
     label: "MAU",
     value: 100,
     suffix: "+",
-    detail: "Usuários orgânicos em 15 dias",
+    detail: "Usuários orgânicos em 26 dias",
     icon: Users,
     color: "emerald",
   },
   {
     label: "Retenção",
-    value: 80,
+    value: 44,
     suffix: "%",
     detail: "Estimativa inicial de retenção",
     icon: TrendingUp,
@@ -49,7 +49,7 @@ const resultados = [
   },
   {
     label: "Churn",
-    value: 20,
+    value: 56,
     suffix: "%",
     detail: "Estimado; foco em engajamento",
     icon: AlertCircle,
@@ -130,7 +130,7 @@ export function ResultsSection() {
           </div>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
             Validação inicial:{" "}
-            <span className="text-emerald-400">MAU 100+, retenção 80%</span>
+            <span className="text-emerald-400">MAU 100+, retenção 44%</span>
           </h2>
           <p className="text-neutral-400 max-w-3xl mx-auto text-lg">
             Prova de que a solução resolve a dor: usuários orgânicos, retenção

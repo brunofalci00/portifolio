@@ -5,8 +5,8 @@ import { Clock, Users, CheckCircle, Target, TrendingUp, Sparkles } from "lucide-
 
 const metasCurto = [
   {
-    title: "Lançar PWA em 2 semanas",
-    body: "Do Figma ao código e deploy em 15 dias para validar rápido.",
+    title: "Lançar PWA em menos de 1 mês",
+    body: "Do Figma ao código e deploy em 26 dias para validar rápido.",
     icon: Clock,
   },
   {
@@ -15,7 +15,7 @@ const metasCurto = [
     icon: Users,
   },
   {
-    title: "Retenção mínima 80%",
+    title: "Retenção mínima 44%",
     body: "Garantir que o app mantém os primeiros usuários engajados.",
     icon: CheckCircle,
   },
@@ -74,9 +74,9 @@ export function ObjectivesSection() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-neutral-400 text-lg leading-relaxed"
             >
-              O objetivo é validar rápido: lançar o PWA em 2 semanas, adquirir os
+              O objetivo é validar rápido: lançar o PWA em menos de 1 mês, adquirir os
               100 primeiros usuários organicamente e manter retenção mínima de
-              80%. Em seguida, preparar o terreno para 1000+ usuários.
+              44%. Em seguida, preparar o terreno para 1000+ usuários.
             </motion.p>
 
             {/* Personal objective card */}
@@ -189,7 +189,7 @@ export function ObjectivesSection() {
                 </div>
                 <p className="text-sm text-neutral-400">
                   <span className="text-white">3 metas</span> para validar o MVP
-                  em 15 dias
+                  em 26 dias
                 </p>
               </div>
             </motion.div>

@@ -15,7 +15,7 @@ const reflexao = {
       icon: Trophy,
     },
     {
-      text: "Mostrar que pessoas usariam o que eu construí (100+ usuários, 75% voltando).",
+      text: "Mostrar que pessoas usariam o que eu construí (100+ usuários, 44% voltando).",
       icon: CheckCircle,
     },
     {

@@ -10,8 +10,8 @@ import { ParallaxElement } from "@/components/scroll/ParallaxElement";
 
 const heroStats = [
   { label: "Usuários Ativos", value: "100+", icon: Users },
-  { label: "Retenção", value: "80%", icon: CheckCircle },
-  { label: "Time-to-Market", value: "15 dias", icon: Clock },
+  { label: "Retenção", value: "44%", icon: CheckCircle },
+  { label: "Time-to-Market", value: "26 dias", icon: Clock },
 ];
 
 const imageShadow =
@@ -80,8 +80,8 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-white leading-[1.1]"
             >
-              Bora: <span className="text-emerald-400">100 pessoas</span> usando
-              um app que eu criei do zero em 15 dias
+              Bora: <span className="text-emerald-400">100 usuários</span> usando
+              um app que eu criei do zero em 26 dias
             </motion.h1>
 
             <motion.p
@@ -102,7 +102,7 @@ export function HeroSection() {
             >
               Apps de hábitos costumam ser complicados demais. Eu queria criar
               algo diferente: simples, bonito e que realmente ajudasse as
-              pessoas. O resultado? Mais de 100 pessoas usando em 2 semanas.
+              pessoas. O resultado? Mais de 100 usuários usando em menos de um mês.
             </motion.p>
 
             {/* Tech badges */}
@@ -176,7 +176,7 @@ export function HeroSection() {
                   <div className="absolute bottom-4 left-4 right-4">
                     <div className="p-4 rounded-xl bg-neutral-950/80 backdrop-blur-sm ring-1 ring-white/10">
                       <p className="text-sm text-neutral-400 mb-1">Do Figma ao Deploy</p>
-                      <p className="text-white font-medium">15 dias de desenvolvimento</p>
+                      <p className="text-white font-medium">26 dias de desenvolvimento</p>
                     </div>
                   </div>
                 </div>

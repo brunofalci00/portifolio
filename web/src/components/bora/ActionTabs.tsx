@@ -72,12 +72,12 @@ const stackTecnica = [
 const gtm = [
   {
     title: "Aquisição orgânica",
-    body: "Conteúdo orgânico e programa de afiliados para 100+ usuários em 15 dias (CAC zero).",
+    body: "Conteúdo orgânico e programa de afiliados para 100+ usuários em 26 dias (CAC zero).",
     icon: Megaphone,
   },
   {
     title: "Funil AARRR",
-    body: "Retenção estimada 80%, churn 20%; foco em engajamento diário (guided journey, gamification).",
+    body: "Retenção estimada 44%, churn 56%; foco em engajamento diário (guided journey, gamification).",
     icon: TrendingUp,
   },
   {
@@ -223,7 +223,7 @@ export function ActionTabs() {
                     React + Supabase + Vercel
                   </p>
                   <p className="text-sm text-neutral-500 mt-1">
-                    PWA completo em 15 dias
+                    PWA completo em 26 dias
                   </p>
                 </div>
               </div>

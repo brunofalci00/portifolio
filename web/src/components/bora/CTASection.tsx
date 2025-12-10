@@ -19,7 +19,7 @@ import { Button } from "@/components/ui/button";
 
 const metadata = [
   { label: "Case", value: "Bora - App de Hábitos", icon: CheckCircle },
-  { label: "Timeline", value: "15 dias de dev (out-nov 2024)", icon: Calendar },
+  { label: "Timeline", value: "26 dias de dev (out-nov 2024)", icon: Calendar },
   {
     label: "Role",
     value: "Solo Builder (Product, Design, Dev, Growth)",
@@ -30,7 +30,7 @@ const metadata = [
     value: "React, TypeScript, Supabase, Vercel, shadcn/ui",
     icon: Code2,
   },
-  { label: "Status", value: "Live com 110+ usuários ativos", icon: CheckCircle },
+  { label: "Status", value: "Live com 100+ usuários ativos", icon: CheckCircle },
   { label: "Última atualização", value: "Dezembro 2024", icon: Clock },
 ];
 

@@ -23,7 +23,7 @@ const aprendizados = [
   },
   {
     title: "Ship early, iterate often",
-    body: "15 dias para lançar > meses planejando; feedback real é o maior professor.",
+    body: "26 dias para lançar > meses planejando; feedback real é o maior professor.",
     icon: Rocket,
   },
   {
