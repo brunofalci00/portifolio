@@ -122,25 +122,6 @@ export function HeroSection() {
               <span>, 2.5% de engajamento e R$100 mil em mentoria.</span>
             </motion.p>
 
-            {/* Tech badges */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="flex flex-wrap gap-2"
-            >
-              {["ChatGPT", "Descript", "Zapier", "Metricool", "Content Strategy"].map(
-                (tech) => (
-                  <span
-                    key={tech}
-                    className="px-3 py-1.5 text-sm rounded-full bg-neutral-900/60 ring-1 ring-white/10 text-neutral-300"
-                  >
-                    {tech}
-                  </span>
-                )
-              )}
-            </motion.div>
-
             {/* CTA buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
