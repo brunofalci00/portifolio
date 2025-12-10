@@ -4,14 +4,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowLeft,
-  ArrowRight,
   TrendingUp,
   Users,
   DollarSign,
   Instagram,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { ParallaxElement } from "@/components/scroll/ParallaxElement";
 
 const heroStats = [
@@ -77,137 +74,124 @@ export function HeroSection() {
           </div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-[1.3fr_0.7fr] gap-12 items-start">
+        <div className="grid lg:grid-cols-[1fr_1fr] gap-16 items-center">
           {/* Left content */}
-          <div className="space-y-8">
+          <div className="space-y-10">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-white leading-[1.1]"
+              className="font-display text-5xl sm:text-6xl lg:text-7xl font-light text-white leading-[1.05]"
             >
               De R$0 a{" "}
-              <span className="text-emerald-400">R$100k em 6 meses</span>
+              <span className="text-emerald-400">R$100k</span>
+              <br />
+              <span className="text-neutral-500">em 6 meses</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-xl text-neutral-400 max-w-2xl"
+              className="text-lg text-neutral-300 max-w-xl leading-relaxed"
             >
-              Como transformei um especialista invisível em autoridade digital:
-              estratégia de conteúdo, funil de vendas e IA gerando receita real.
+              Como transformei um especialista invisível em autoridade digital: estratégia de conteúdo, funil de vendas e IA gerando receita real.
             </motion.p>
 
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-neutral-500 max-w-2xl flex flex-wrap gap-1 items-center"
-            >
-              <span>
-                Alfredo Novais tinha anos de expertise em comércio exterior, mas
-                ninguém sabia disso. Em 6 meses, ele saiu de menos de 5 mil
-                seguidores e zero receita digital para 10 mil seguidores
-              </span>
-              <a
-                href="https://www.instagram.com/alfredonovais/?hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-pink-600 hover:text-pink-400 transition-colors"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-              <span>, 2.5% de engajamento e R$100 mil em mentoria.</span>
-            </motion.p>
-
-            {/* CTA buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="flex flex-wrap gap-4 pt-4"
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="pt-4 space-y-4"
             >
-              <Button
-                asChild
-                className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full px-6"
-              >
-                <Link href="/#contato">
-                  Vamos conversar
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
-              <Button
-                variant="outline"
-                asChild
-                className="rounded-full border-white/10 hover:bg-white/5"
-              >
-                <Link href="/#projetos">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Voltar
-                </Link>
-              </Button>
+              <div className="flex items-center gap-3">
+                <div className="w-1 h-8 bg-emerald-400 rounded-full" />
+                <p className="text-neutral-400">
+                  <span className="font-medium text-white">Alfredo Novais</span> — Especialista em Comércio Exterior
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.instagram.com/alfredonovais/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-pink-600/20 hover:bg-pink-600/40 transition-colors"
+                >
+                  <Instagram className="w-4 h-4 text-pink-500" />
+                </a>
+                <p className="text-sm text-neutral-400">
+                  10k seguidores • 2.5% engajamento • R$100k em mentoria
+                </p>
+              </div>
             </motion.div>
           </div>
 
-          {/* Right content - Stats card + Image */}
+          {/* Right content - Image + Stats */}
           <div className="space-y-6">
             <ParallaxElement speed={0.08}>
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="relative"
+                className="relative space-y-6"
               >
                 {/* Professional image */}
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6">
+                <div className="relative aspect-[3/4] rounded-3xl overflow-hidden group">
                   <Image
                     src="/media/trendly/trendly_hero.jpeg"
                     alt="Professional Marketing"
                     fill
-                    className={`object-cover grayscale brightness-[0.7] hover:grayscale-[20%] hover:brightness-100 transition-all duration-500 ${imageShadow}`}
+                    className={`object-cover grayscale brightness-[0.7] group-hover:grayscale-[30%] group-hover:brightness-90 transition-all duration-700 ${imageShadow}`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/60 via-transparent to-transparent" />
 
-                  {/* Overlay badge */}
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <div className="p-4 rounded-xl bg-neutral-950/80 backdrop-blur-sm ring-1 ring-white/10">
-                      <p className="text-sm text-neutral-400 mb-1">
-                        Transformação em 6 meses
-                      </p>
-                      <p className="text-white font-medium">
+                  {/* Overlay badge - redesigned */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.7 }}
+                    className="absolute bottom-0 left-0 right-0 p-6"
+                  >
+                    <div className="p-5 rounded-2xl bg-gradient-to-r from-neutral-950/90 to-neutral-900/80 backdrop-blur-md ring-1 ring-emerald-500/20 border border-emerald-400/10">
+                      <div className="flex items-center gap-2 mb-2">
+                        <div className="w-2 h-2 rounded-full bg-emerald-400" />
+                        <p className="text-xs text-emerald-400 font-medium">Resultados Alcançados</p>
+                      </div>
+                      <p className="text-xl font-light text-white">
                         De invisível a autoridade
                       </p>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
 
-                {/* Stats card */}
-                <div className="p-6 rounded-2xl bg-neutral-900/60 ring-1 ring-white/10 backdrop-blur-sm">
-                  <p className="text-sm text-neutral-500 mb-4">
-                    Resultados alcançados
-                  </p>
-                  <div className="grid grid-cols-3 gap-4">
-                    {heroStats.map((stat, idx) => (
-                      <motion.div
+                {/* Stats card - redesigned for better visual hierarchy */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  className="grid grid-cols-3 gap-4"
+                >
+                  {heroStats.map((stat, idx) => {
+                    const Icon = stat.icon;
+                    return (
+                      <div
                         key={stat.label}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4, delay: 0.5 + idx * 0.1 }}
-                        className="text-center p-3 rounded-xl bg-neutral-950/50 ring-1 ring-white/5"
+                        className="p-5 rounded-2xl bg-gradient-to-br from-neutral-900 to-neutral-950 ring-1 ring-white/10 hover:ring-emerald-500/30 transition-all duration-300 group cursor-default"
                       >
-                        <stat.icon className="w-5 h-5 text-emerald-400 mx-auto mb-2" />
-                        <p className="text-2xl font-light text-white">
+                        <div className="flex items-center justify-between mb-3">
+                          <Icon className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" />
+                          <div className="w-6 h-6 rounded-full bg-emerald-400/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        </div>
+                        <p className="text-2xl font-light text-white mb-1">
                           {stat.value}
                         </p>
-                        <p className="text-xs text-neutral-500 mt-1">
+                        <p className="text-xs text-neutral-400 leading-tight">
                           {stat.label}
                         </p>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
+                      </div>
+                    );
+                  })}
+                </motion.div>
               </motion.div>
             </ParallaxElement>
           </div>
