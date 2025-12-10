@@ -159,12 +159,6 @@ export function ChallengesSection() {
                 className={`object-cover grayscale brightness-[0.7] hover:grayscale-[20%] hover:brightness-100 transition-all duration-500 ${imageShadow}`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4">
-                <div className="p-3 rounded-xl bg-neutral-950/80 backdrop-blur-sm ring-1 ring-white/10">
-                  <p className="text-sm text-neutral-400">Mindset necessário</p>
-                  <p className="text-white font-medium">Adaptação constante</p>
-                </div>
-              </div>
             </motion.div>
 
             {/* Key insight card */}
