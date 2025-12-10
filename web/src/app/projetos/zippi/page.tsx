@@ -23,7 +23,7 @@ export default function ZippiCasePage() {
     <>
       <SideNavigation sections={zippiSections} />
 
-      <div className="bg-neutral-950 text-white" id="topo">
+      <div className="bg-neutral-950 text-white md:pl-28 lg:pl-36" id="topo">
         <HeroSection />
         <ContextSection />
         <ProcessSection />

@@ -29,7 +29,7 @@ export default function TrendlyCasePage() {
     <>
       <SideNavigation sections={trendlySections} />
 
-      <div className="bg-neutral-950 text-white" id="topo">
+      <div className="bg-neutral-950 text-white md:pl-28 lg:pl-36" id="topo">
         <HeroSection />
         <SituationSection />
         <ObjectivesSection />

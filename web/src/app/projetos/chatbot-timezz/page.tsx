@@ -24,7 +24,7 @@ export default function ChatbotTimezzCasePage() {
     <>
       <SideNavigation sections={chatbotSections} />
 
-      <div className="bg-neutral-950 text-white" id="topo">
+      <div className="bg-neutral-950 text-white md:pl-28 lg:pl-36" id="topo">
         <HeroSection />
         <SituationSection />
         <ObjectivesSection />

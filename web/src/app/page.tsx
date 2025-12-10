@@ -37,7 +37,7 @@ export default function Home() {
       {/* Social Links & Section Number - Right */}
       <SideSocials />
 
-      <main>
+      <main className="md:pl-28 lg:pl-36">
         {/* Home / Hero Section */}
         <section id="home">
           <HeroSection onScrollToProjects={scrollToProjects} />
