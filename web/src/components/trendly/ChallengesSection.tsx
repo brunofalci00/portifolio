@@ -9,7 +9,6 @@ import {
   Mic,
   Eye,
   Clock,
-  ArrowRight,
 } from "lucide-react";
 
 const desafios = [
@@ -206,40 +205,6 @@ export function ChallengesSection() {
               </div>
             </motion.div>
 
-            {/* Process flow */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="p-4 rounded-xl bg-neutral-900/60 ring-1 ring-white/10"
-            >
-              <p className="text-xs text-neutral-500 uppercase tracking-wider mb-4">
-                Processo aplicado
-              </p>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center">
-                    <AlertTriangle className="w-4 h-4 text-orange-400" />
-                  </div>
-                  <span className="text-sm text-neutral-400">Problema</span>
-                </div>
-                <ArrowRight className="w-4 h-4 text-neutral-600" />
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
-                    <Lightbulb className="w-4 h-4 text-blue-400" />
-                  </div>
-                  <span className="text-sm text-neutral-400">Solução</span>
-                </div>
-                <ArrowRight className="w-4 h-4 text-neutral-600" />
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center">
-                    <CheckCircle className="w-4 h-4 text-emerald-400" />
-                  </div>
-                  <span className="text-sm text-neutral-400">Resultado</span>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </div>
