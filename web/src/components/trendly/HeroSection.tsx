@@ -76,7 +76,7 @@ export function HeroSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left content */}
-          <div className="space-y-8 pt-4">
+          <div className="space-y-8">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -154,7 +154,7 @@ export function HeroSection() {
           </div>
 
           {/* Right content - Only Image */}
-          <div className="pt-4">
+          <div>
             <ParallaxElement speed={0.08}>
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
