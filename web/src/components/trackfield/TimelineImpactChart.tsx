@@ -38,16 +38,16 @@ export function TimelineImpactChart() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.7, delay: 0.4 }}
-      className="relative w-full aspect-video rounded-2xl overflow-hidden ring-1 ring-white/10 bg-neutral-900/60 backdrop-blur-sm p-6"
+      className="relative w-full h-96 rounded-2xl overflow-hidden ring-1 ring-white/10 bg-neutral-900/60 backdrop-blur-sm p-6 flex flex-col"
     >
       {/* Header */}
-      <div className="mb-6 space-y-2">
+      <div className="mb-6 space-y-2 flex-shrink-0">
         <h3 className="text-xl font-light text-white">Evolução do Tempo - 8 Semanas</h3>
         <p className="text-sm text-neutral-500">De 4 horas semanais para 30 minutos</p>
       </div>
 
       {/* Chart */}
-      <ResponsiveContainer width="100%" height="85%">
+      <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={timelineData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
           <defs>
             <linearGradient id="timeGradient" x1="0" y1="0" x2="1" y2="0">
