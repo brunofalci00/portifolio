@@ -30,27 +30,6 @@ export function ConclusionSection() {
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="space-y-16">
-          {/* Quote */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-            className="relative p-12 rounded-3xl bg-gradient-to-br from-emerald-500/5 to-transparent ring-1 ring-emerald-500/20 overflow-hidden text-center"
-          >
-            {/* Decorative glow */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent" />
-
-            <div className="relative z-10 space-y-6">
-              <div className="text-6xl text-emerald-400/20">&ldquo;</div>
-              <blockquote className="text-2xl sm:text-3xl lg:text-4xl font-light text-white max-w-4xl mx-auto leading-tight">
-                O builder não constrói tecnologia — ele constrói{" "}
-                <span className="text-emerald-400">soluções para pessoas</span>.
-              </blockquote>
-              <div className="text-6xl text-emerald-400/20 rotate-180">&ldquo;</div>
-            </div>
-          </motion.div>
-
           {/* Learnings Header */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
