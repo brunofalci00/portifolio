@@ -185,38 +185,6 @@ function FunnelBottleneckDiagram() {
                 backgroundSize: stage.isBottleneck ? '200% 200%' : '100% 100%',
               }}
             >
-              {/* Badge "Gargalo Crítico" for bottleneck */}
-              {stage.isBottleneck && (
-                <>
-                  <Badge
-                    variant="outline"
-                    className="absolute -top-3 left-1/2 -translate-x-1/2
-                               bg-amber-500/30 border-amber-400/60 text-amber-50
-                               font-bold px-4 py-1.5 text-sm shadow-[0_0_20px_rgba(251,146,60,0.4)]
-                               backdrop-blur-sm z-20 ring-1 ring-amber-400/20"
-                  >
-                    Gargalo Crítico
-                  </Badge>
-
-                  {/* Handmade underline emphasis */}
-                  <motion.svg
-                    className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-32 h-2 text-amber-400/50 pointer-events-none"
-                    initial={{ pathLength: 0, opacity: 0 }}
-                    whileInView={{ pathLength: 1, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
-                    viewBox="0 0 128 8"
-                  >
-                    <path
-                      d="M 4,4 Q 32,6 64,4 T 124,5"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      fill="none"
-                      strokeLinecap="round"
-                    />
-                  </motion.svg>
-                </>
-              )}
 
               <CardContent className="h-full flex items-center justify-center p-0">
                 {/* Content */}
@@ -228,39 +196,6 @@ function FunnelBottleneckDiagram() {
                   {stage.sublabel && <p className="text-sm font-medium text-neutral-400">{stage.sublabel}</p>}
                 </div>
 
-                {/* Alert icon on bottleneck */}
-                {stage.isBottleneck && (
-                  <motion.div
-                    animate={{ scale: [1, 1.2, 1], opacity: [0.7, 1, 0.7] }}
-                    transition={{ duration: 2.5, repeat: Infinity }}
-                    className="absolute right-4"
-                  >
-                    <Construction className="w-6 h-6 text-amber-400" />
-                  </motion.div>
-                )}
-
-                {/* Handmade circle emphasis around icon */}
-                {stage.isBottleneck && (
-                  <motion.svg
-                    className="absolute right-4 w-12 h-12 text-amber-400/40 pointer-events-none"
-                    initial={{ pathLength: 0, opacity: 0, scale: 0.8 }}
-                    whileInView={{ pathLength: 1, opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.8, duration: 1.2, ease: "easeOut" }}
-                    viewBox="0 0 48 48"
-                  >
-                    <motion.circle
-                      cx="24" cy="24" r="18"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeDasharray="3 2"
-                      animate={{ rotate: 360 }}
-                      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                    />
-                  </motion.svg>
-                )}
               </CardContent>
 
               {/* Background animation for bottleneck */}
@@ -318,57 +253,6 @@ function FunnelBottleneckDiagram() {
         ))}
       </div>
 
-      {/* Loss indicator - connected to funnel */}
-      <motion.div
-        initial={{ opacity: 0, x: 20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.8, type: "spring", stiffness: 100 }}
-        className="absolute hidden lg:flex items-center gap-0"
-        style={{
-          top: 'calc(50% + 40px)',
-          right: '-120px'
-        }}
-      >
-        {/* Connector line + arrow */}
-        <svg
-          className="w-16 h-8 text-amber-400"
-          viewBox="0 0 64 32"
-        >
-          {/* Horizontal dashed line */}
-          <motion.line
-            x1="0" y1="16" x2="52" y2="16"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeDasharray="4 3"
-            strokeLinecap="round"
-            initial={{ pathLength: 0, opacity: 0 }}
-            whileInView={{ pathLength: 1, opacity: 0.7 }}
-            viewport={{ once: true }}
-            transition={{ delay: 1, duration: 0.6, ease: "easeOut" }}
-          />
-          {/* Arrow tip */}
-          <motion.path
-            d="M 50,12 L 56,16 L 50,20"
-            stroke="currentColor"
-            strokeWidth="2"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 0.9 }}
-            viewport={{ once: true }}
-            transition={{ delay: 1.4, duration: 0.3 }}
-          />
-        </svg>
-
-        {/* Loss badge - improved contrast */}
-        <div className="bg-amber-500/30 ring-2 ring-amber-400/60 rounded-xl px-4 py-3
-                        shadow-[0_0_20px_rgba(251,146,60,0.3)] backdrop-blur-sm">
-          <p className="text-xl font-bold text-amber-50">60%</p>
-          <p className="text-xs text-amber-200 font-semibold">de perda</p>
-        </div>
-      </motion.div>
     </motion.div>
   );
 }
@@ -579,17 +463,6 @@ function ContextCopySection() {
           Porque cada lead que entrava trazia perguntas. Muitas perguntas. E a maioria?
           <span className="text-emerald-400 font-medium"> Exatamente as mesmas.</span>
         </p>
-      </div>
-
-      {/* Common questions highlight */}
-      <div className="p-4 rounded-lg bg-neutral-900/40 ring-1 ring-white/10">
-        <p className="text-sm text-neutral-400 mb-2">Perguntas que mais chegavam:</p>
-        <ul className="space-y-1">
-          <li className="text-neutral-300 text-sm flex items-start gap-2"><MessageSquare className="w-3 h-3 text-emerald-400 mt-0.5 flex-shrink-0" /> &quot;Vocês fazem cobertura de eventos corporativos?&quot;</li>
-          <li className="text-neutral-300 text-sm flex items-start gap-2"><MessageSquare className="w-3 h-3 text-emerald-400 mt-0.5 flex-shrink-0" /> &quot;Quanto custa em média?&quot;</li>
-          <li className="text-neutral-300 text-sm flex items-start gap-2"><MessageSquare className="w-3 h-3 text-emerald-400 mt-0.5 flex-shrink-0" /> &quot;Qual o prazo de entrega?&quot;</li>
-          <li className="text-neutral-300 text-sm flex items-start gap-2"><MessageSquare className="w-3 h-3 text-emerald-400 mt-0.5 flex-shrink-0" /> &quot;Trabalham com edição também?&quot;</li>
-        </ul>
       </div>
 
       <p className="text-neutral-300 leading-relaxed">

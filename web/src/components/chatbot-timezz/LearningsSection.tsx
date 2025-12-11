@@ -32,11 +32,6 @@ function CoreLearningHighlight() {
           <span className="text-emerald-400">é só um toy project complexo.</span>&quot;
         </p>
 
-        <div className="text-center">
-          <span className="px-4 py-2 rounded-full bg-emerald-500/10 ring-1 ring-emerald-500/20 text-emerald-400 text-sm">
-            Customer-Centric AI Development
-          </span>
-        </div>
       </div>
     </motion.div>
   );
@@ -112,11 +107,9 @@ function ChallengeBreakdown() {
     "Bot soava robótico e travado",
     "Perdia contexto entre mensagens",
     "Não lidava com casos inesperados",
-    "Transições abruptas",
   ];
 
   const solutions = [
-    "95% não perceberam que era bot",
     "Conversas fluidas e naturais",
     "Contexto mantido perfeitamente",
     "Edge cases tratados com elegância",
@@ -287,12 +280,6 @@ function AIBuilderPhilosophyCard() {
             </motion.li>
           ))}
         </ul>
-
-        <div className="text-center">
-          <span className="px-4 py-2 rounded-full bg-emerald-500/10 ring-1 ring-emerald-500/20 text-emerald-400 text-sm">
-            Customer-Centric AI Development
-          </span>
-        </div>
       </div>
     </motion.div>
   );

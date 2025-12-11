@@ -354,19 +354,6 @@ function PhaseCopyHumanization() {
         ))}
       </div>
 
-      {/* Result Badge */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.5 }}
-        className="text-center"
-      >
-        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 ring-1 ring-emerald-500/20 text-emerald-400 text-sm">
-          <CheckCircle className="w-4 h-4" />
-          95% dos leads não percebiam que era bot até o handoff
-        </span>
-      </motion.div>
-
       {/* Humanization Example */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -617,18 +604,6 @@ export function StrategySection() {
             <IterationCounter />
           </div>
 
-          {/* Pull Quote */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
-            <p className="text-neutral-400 italic max-w-2xl mx-auto">
-              &quot;95% dos leads não percebiam que estavam falando com um bot até o handoff. Missão cumprida: humanização total.&quot;
-            </p>
-          </motion.div>
         </div>
       </div>
     </section>
