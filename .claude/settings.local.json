@@ -57,7 +57,8 @@
       "Bash(then ls -la \"C:\\Users\\bruno\\Documents\\Pessoal\\portifolio_vfinal\\web\\public\\media\\zippi\\tools\")",
       "Bash(else echo \"tools directory does not exist\")",
       "Bash(tree:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(exit /b 0)"
     ],
     "deny": [],
     "ask": []

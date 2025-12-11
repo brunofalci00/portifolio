@@ -11,7 +11,7 @@ import {
   Code2,
   CheckCircle,
   Clock,
-  Github,
+  Instagram,
   Linkedin,
   Mail,
 } from "lucide-react";
@@ -35,13 +35,13 @@ const metadata = [
 ];
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/brunosantosss", label: "GitHub" },
+  { icon: Instagram, href: "https://www.instagram.com/bruno_falci", label: "Instagram" },
   {
     icon: Linkedin,
-    href: "https://linkedin.com/in/brunosantosss",
+    href: "https://www.linkedin.com/in/bruno-falci-6833851ab/",
     label: "LinkedIn",
   },
-  { icon: Mail, href: "mailto:brun0santos.dev@gmail.com", label: "Email" },
+  { icon: Mail, href: "mailto:brunofalci2000@gmail.com", label: "Email" },
 ];
 
 export function CTASection() {
