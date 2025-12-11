@@ -146,7 +146,7 @@ export function CTASection() {
                 className="h-14 px-8 text-base bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl group"
               >
                 <a
-                  href="https://boraapp.vercel.app"
+                  href="https://www.habitz.life/bora"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
