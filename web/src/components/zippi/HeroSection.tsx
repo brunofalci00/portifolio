@@ -124,7 +124,7 @@ export function HeroSection() {
               width="100%"
               height={280}
               cardDistance={60}
-              verticalDistance={70}
+              verticalDistance={30}
               delay={5000}
               pauseOnHover={true}
               easing="power2.inOut"
