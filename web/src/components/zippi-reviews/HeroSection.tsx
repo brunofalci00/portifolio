@@ -85,7 +85,7 @@ export function HeroSection() {
           className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-16 max-w-3xl"
         >
           <div className="p-6 rounded-xl bg-neutral-900/70 backdrop-blur-sm ring-1 ring-white/10 hover:ring-emerald-500/30 transition-all">
-            <div className="text-3xl font-light text-emerald-400 mb-2">+29%</div>
+            <div className="text-3xl font-light text-emerald-400 mb-2">+34%</div>
             <p className="text-sm text-neutral-300">Melhoria no Rating</p>
           </div>
           <div className="p-6 rounded-xl bg-neutral-900/70 backdrop-blur-sm ring-1 ring-white/10 hover:ring-emerald-500/30 transition-all">

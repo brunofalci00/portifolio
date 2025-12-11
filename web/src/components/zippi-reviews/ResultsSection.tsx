@@ -59,12 +59,12 @@ export function ResultsSection() {
                 <TrendingUp className="w-8 h-8 text-emerald-400 flex-shrink-0" />
 
                 <div className="text-center">
-                  <span className="font-display text-5xl sm:text-6xl font-light text-emerald-400">4.5</span>
+                  <span className="font-display text-5xl sm:text-6xl font-light text-emerald-400">4.7</span>
                   <div className="flex items-center gap-1 mt-2 justify-center">
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        className={`w-5 h-5 ${i < 4 ? "text-emerald-400 fill-emerald-400" : i === 4 ? "text-emerald-400 fill-emerald-400/50" : "text-neutral-700"}`}
+                        className={`w-5 h-5 ${i < 4 ? "text-emerald-400 fill-emerald-400" : i === 4 ? "text-emerald-400 fill-emerald-400/70" : "text-neutral-700"}`}
                       />
                     ))}
                   </div>
@@ -72,7 +72,7 @@ export function ResultsSection() {
               </div>
 
               <p className="text-2xl sm:text-3xl text-white font-light">
-                +29% de Melhoria no Rating
+                +34% de Melhoria no Rating
               </p>
 
               {/* Achievement badge */}

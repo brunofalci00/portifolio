@@ -125,7 +125,7 @@ export function ContextSection() {
               <div className="grid grid-cols-3 gap-4 max-w-xl mx-auto pt-6">
                 <div className="text-center">
                   <p className="text-sm text-neutral-500">Mensuravel</p>
-                  <p className="text-lg text-emerald-400 font-display">+29% rating</p>
+                  <p className="text-lg text-emerald-400 font-display">+34% rating</p>
                 </div>
                 <div className="text-center border-x border-white/10">
                   <p className="text-sm text-neutral-500">Temporal</p>
