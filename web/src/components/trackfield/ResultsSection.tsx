@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Trophy, Clock, Zap, Users, TrendingDown } from "lucide-react";
+import TypewriterText from "@/components/ui/typewriter-text";
 
 export function ResultsSection() {
   return (
@@ -21,6 +22,9 @@ export function ResultsSection() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 ring-1 ring-white/10">
               <span className="text-sm text-neutral-300">Os Resultados</span>
             </div>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
+              <TypewriterText speed={50}>Impacto Transformacional</TypewriterText>
+            </h2>
             <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
               Processo transformado, tempo economizado, e time mais estratégico.
             </p>
@@ -96,12 +100,6 @@ export function ResultsSection() {
                 title: "Economia",
                 value: "208h",
                 desc: "por ano",
-              },
-              {
-                icon: Users,
-                title: "Franquias",
-                value: "300+",
-                desc: "impactadas",
               },
             ].map((metric, index) => {
               const Icon = metric.icon;
