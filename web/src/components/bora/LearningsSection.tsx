@@ -27,11 +27,6 @@ const aprendizados = [
     icon: Rocket,
   },
   {
-    title: "Constraints criam criatividade",
-    body: "Limites de PWA, tempo e recursos geraram soluções melhores (WhatsApp, simplicidade).",
-    icon: Puzzle,
-  },
-  {
     title: "Falar com usuários",
     body: "Feedback direto pelo WhatsApp e app direcionou priorização e roadmap.",
     icon: MessageSquare,
@@ -100,7 +95,7 @@ export function LearningsSection() {
           {/* Left - Learnings grid */}
           <div className="space-y-6">
             <p className="text-sm text-neutral-500 uppercase tracking-wider">
-              5 aprendizados-chave
+              4 aprendizados-chave
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4">
@@ -124,27 +119,6 @@ export function LearningsSection() {
                   </p>
                 </motion.div>
               ))}
-
-              {/* Featured quote card */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="sm:col-span-2 p-6 rounded-2xl bg-gradient-to-br from-emerald-500/10 to-emerald-500/5 ring-1 ring-emerald-500/20"
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  <Lightbulb className="w-5 h-5 text-emerald-400" />
-                  <p className="text-sm text-emerald-400 uppercase tracking-wider">
-                    Insight principal
-                  </p>
-                </div>
-                <p className="text-white text-lg leading-relaxed italic">
-                  "Cada feature foi um experimento. Cada erro foi uma aula. Cada
-                  usuário que voltou foi uma validação de que estou no caminho
-                  certo."
-                </p>
-              </motion.div>
             </div>
           </div>
 
@@ -164,23 +138,6 @@ export function LearningsSection() {
                 className={`object-cover grayscale brightness-[0.7] hover:grayscale-[20%] hover:brightness-100 transition-all duration-500 ${imageShadow}`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent" />
-
-              {/* Overlay info */}
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <div className="p-4 rounded-xl bg-neutral-950/80 backdrop-blur-sm ring-1 ring-white/10">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center">
-                      <Brain className="w-5 h-5 text-emerald-400" />
-                    </div>
-                    <div>
-                      <p className="text-white font-medium">Growth mindset</p>
-                      <p className="text-sm text-neutral-500">
-                        Aprender fazendo
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Floating badge */}
@@ -191,7 +148,7 @@ export function LearningsSection() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="absolute -top-4 -right-4 px-4 py-2 rounded-full bg-emerald-500/20 ring-1 ring-emerald-500/30"
             >
-              <span className="text-sm text-emerald-400">5 lições</span>
+              <span className="text-sm text-emerald-400">4 lições</span>
             </motion.div>
           </motion.div>
         </div>
