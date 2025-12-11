@@ -37,3 +37,9 @@ claude-code-workflows/
 # Misc
 *.log
 nul
+
+# Claude local settings
+.claude/settings.local.json
+
+# Playwright screenshots
+.playwright-mcp/
