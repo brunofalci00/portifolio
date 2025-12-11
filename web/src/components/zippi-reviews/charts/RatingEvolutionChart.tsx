@@ -151,24 +151,6 @@ export function RatingEvolutionChart() {
         </div>
       </div>
 
-      {/* Key Metrics Summary */}
-      <div className="grid grid-cols-3 gap-4 mt-6">
-        <div className="rounded-xl bg-neutral-900/30 ring-1 ring-white/5 p-4">
-          <p className="text-xs text-neutral-400 mb-1">Rating Inicial</p>
-          <p className="text-2xl font-semibold text-white font-mono">3.5⭐</p>
-          <p className="text-xs text-neutral-500">Junho 2022</p>
-        </div>
-        <div className="rounded-xl bg-emerald-500/10 ring-1 ring-emerald-500/20 p-4">
-          <p className="text-xs text-emerald-400 mb-1">Rating Final</p>
-          <p className="text-2xl font-semibold text-white font-mono">4.7⭐</p>
-          <p className="text-xs text-emerald-400/70">Dezembro 2022</p>
-        </div>
-        <div className="rounded-xl bg-neutral-900/30 ring-1 ring-white/5 p-4">
-          <p className="text-xs text-neutral-400 mb-1">Melhoria</p>
-          <p className="text-2xl font-semibold text-emerald-400 font-mono">+34.3%</p>
-          <p className="text-xs text-neutral-500">em 6 meses</p>
-        </div>
-      </div>
     </motion.div>
   );
 }

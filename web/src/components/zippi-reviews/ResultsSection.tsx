@@ -93,13 +93,6 @@ export function ResultsSection() {
           >
             {[
               {
-                icon: Star,
-                title: "Rating",
-                before: "3.5",
-                after: "4.5",
-                change: "+29%",
-              },
-              {
                 icon: TrendingUp,
                 title: "Reviews Positivos",
                 before: "35%",
