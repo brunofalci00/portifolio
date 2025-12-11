@@ -17,7 +17,7 @@ const imageShadow =
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-neutral-950">
+    <section id="topo" className="relative min-h-screen overflow-hidden bg-neutral-950">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
@@ -149,7 +149,7 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="relative"
             >
-              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
+              <div className="relative aspect-[9/16] rounded-2xl overflow-hidden">
                 <Image
                   src="/media/projects/bora/portifolio-11.png"
                   alt="Bora App - Interface Principal"

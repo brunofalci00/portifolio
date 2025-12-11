@@ -29,7 +29,7 @@ export default function BoraCasePage() {
     <>
       <SideNavigation sections={boraSections} />
 
-      <div className="bg-neutral-950 text-white md:pl-32 lg:pl-48" id="topo">
+      <div className="bg-neutral-950 text-white md:pl-32 lg:pl-48">
         <HeroSection />
         <ProblemSection />
         <ObjectivesSection />
