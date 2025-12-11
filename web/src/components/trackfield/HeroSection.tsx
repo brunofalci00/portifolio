@@ -16,7 +16,7 @@ export function HeroSection() {
   const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   return (
-    <section ref={containerRef} className="relative min-h-screen flex items-center justify-center py-20 px-6">
+    <section id="topo" ref={containerRef} className="relative min-h-screen flex items-center justify-center py-20 px-6">
       {/* Background */}
       <div className="absolute inset-0 bg-neutral-950" />
 

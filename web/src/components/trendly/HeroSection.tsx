@@ -22,7 +22,7 @@ const imageShadow =
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-neutral-950">
+    <section id="topo" className="relative min-h-screen overflow-hidden bg-neutral-950">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div

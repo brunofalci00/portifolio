@@ -84,7 +84,7 @@ function ImpactMetricCard({
 // Main Hero Section
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden">
+    <section id="topo" className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-neutral-950" />
 
