@@ -41,7 +41,7 @@ export function ContextSection() {
               <span className="text-sm text-neutral-300">O Contexto</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
-              <TypewriterText speed={50}>O Desafio</TypewriterText>
+              <TypewriterText speed={50} startWhenInView={true}>O Desafio</TypewriterText>
             </h2>
             <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
               SEO parado, tráfego estagnado, concorrentes dominando.

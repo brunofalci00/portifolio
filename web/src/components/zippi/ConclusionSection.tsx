@@ -65,7 +65,7 @@ export function ConclusionSection() {
               <span className="text-sm text-neutral-300">Reflexões</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
-              <TypewriterText speed={50}>O que Aprendi</TypewriterText>
+              <TypewriterText speed={50} startWhenInView={true}>O que Aprendi</TypewriterText>
             </h2>
           </motion.div>
 

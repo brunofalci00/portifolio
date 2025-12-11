@@ -6,6 +6,7 @@ export type TypewriterTextProps = {
   speed?: number;
   loop?: boolean;
   className?: string;
+  startWhenInView?: boolean;
 };
 
 const LOOP_RESTART_DELAY_MS = 1000;
@@ -15,12 +16,38 @@ const TypewriterText: React.FC<TypewriterTextProps> = ({
   speed = 50,
   loop = false,
   className = "",
+  startWhenInView = false,
 }) => {
   const [displayed, setDisplayed] = useState("");
+  const [isInView, setIsInView] = useState(!startWhenInView);
   const index = useRef(0);
   const timeout = useRef<NodeJS.Timeout | null>(null);
+  const elementRef = useRef<HTMLSpanElement>(null);
+  const hasStarted = useRef(false);
 
   useEffect(() => {
+    if (!startWhenInView) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasStarted.current) {
+          setIsInView(true);
+          hasStarted.current = true;
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [startWhenInView]);
+
+  useEffect(() => {
+    if (!isInView) return;
+
     setDisplayed("");
     index.current = 0;
     function type() {
@@ -42,9 +69,9 @@ const TypewriterText: React.FC<TypewriterTextProps> = ({
         clearTimeout(timeout.current);
       }
     };
-  }, [children, speed, loop]);
+  }, [children, speed, loop, isInView]);
 
-  return <span className={className}>{displayed}</span>;
+  return <span ref={elementRef} className={className}>{displayed}</span>;
 };
 
 export default TypewriterText;

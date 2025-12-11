@@ -47,7 +47,8 @@
       "WebFetch(domain:portifolio-iota-flame-93.vercel.app)",
       "mcp__playwright__browser_snapshot",
       "Skill(example-skills:frontend-design)",
-      "Bash(timeout /t 5)"
+      "Bash(timeout /t 5)",
+      "mcp__playwright__browser_press_key"
     ],
     "deny": [],
     "ask": []
