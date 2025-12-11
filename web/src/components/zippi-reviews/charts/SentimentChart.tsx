@@ -47,7 +47,7 @@ const renderLegend = (props: any) => {
             style={{ backgroundColor: entry.color }}
           />
           <span className="text-sm text-neutral-300">
-            {entry.value}: {sentimentData[index].value}%
+            {entry.value}: {sentimentData.find(d => d.name === entry.value)?.value || 0}%
           </span>
         </div>
       ))}
