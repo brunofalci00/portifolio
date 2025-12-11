@@ -48,7 +48,16 @@
       "mcp__playwright__browser_snapshot",
       "Skill(example-skills:frontend-design)",
       "Bash(timeout /t 5)",
-      "mcp__playwright__browser_press_key"
+      "mcp__playwright__browser_press_key",
+      "Bash(if [ -d \"C:\\Users\\bruno\\Documents\\Pessoal\\portifolio_vfinal\\web\\public\\media\\zippi\" ])",
+      "Bash(then ls -la \"C:\\Users\\bruno\\Documents\\Pessoal\\portifolio_vfinal\\web\\public\\media\\zippi\")",
+      "Bash(else echo \"zippi directory does not exist\")",
+      "Bash(fi)",
+      "Bash(if [ -d \"C:\\Users\\bruno\\Documents\\Pessoal\\portifolio_vfinal\\web\\public\\media\\zippi\\tools\" ])",
+      "Bash(then ls -la \"C:\\Users\\bruno\\Documents\\Pessoal\\portifolio_vfinal\\web\\public\\media\\zippi\\tools\")",
+      "Bash(else echo \"tools directory does not exist\")",
+      "Bash(tree:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []
