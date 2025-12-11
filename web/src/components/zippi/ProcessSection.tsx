@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Search, FileText, Settings, BarChart3, Lightbulb } from "lucide-react";
 import { ToolCard } from "./ToolCard";
+import TypewriterText from "@/components/ui/typewriter-text";
 
 export function ProcessSection() {
   const steps = [
@@ -95,7 +96,7 @@ export function ProcessSection() {
               <span className="text-sm text-neutral-300">A Execução</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
-              A Estratégia
+              <TypewriterText speed={50}>A Estratégia</TypewriterText>
             </h2>
             <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
               Metodologia testada em 4 etapas para crescimento orgânico.

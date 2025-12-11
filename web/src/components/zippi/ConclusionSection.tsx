@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Target, BarChart3, RefreshCw } from "lucide-react";
+import TypewriterText from "@/components/ui/typewriter-text";
 
 export function ConclusionSection() {
   const insights = [
@@ -64,7 +65,7 @@ export function ConclusionSection() {
               <span className="text-sm text-neutral-300">Reflexões</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
-              O que Aprendi
+              <TypewriterText speed={50}>O que Aprendi</TypewriterText>
             </h2>
           </motion.div>
 

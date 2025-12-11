@@ -5,6 +5,7 @@ import { TrendingUp, Target, MousePointerClick, Eye, Trophy } from "lucide-react
 import { GrowthChart } from "./charts/GrowthChart";
 import { KeywordsTable } from "./KeywordsTable";
 import { MetricCard } from "./MetricCard";
+import TypewriterText from "@/components/ui/typewriter-text";
 
 export function ResultsSection() {
   return (
@@ -25,7 +26,7 @@ export function ResultsSection() {
               <span className="text-sm text-neutral-300">Os Números</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
-              Os Resultados
+              <TypewriterText speed={50}>Os Resultados</TypewriterText>
             </h2>
             <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
               Crescimento exponencial em 60 dias de execução consistente.
