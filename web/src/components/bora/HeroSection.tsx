@@ -59,7 +59,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="flex flex-wrap items-center gap-3 mb-8"
+          className="flex flex-wrap items-center gap-3 mb-12"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 ring-1 ring-white/10">
             <span className="text-sm text-neutral-300">Case Study</span>
@@ -69,83 +69,85 @@ export function HeroSection() {
           </div>
         </motion.div>
 
-        <div className="space-y-12">
-          {/* Main heading and description */}
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <motion.h1
+        {/* Two column layout - content left, mockup right */}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left column - Content */}
+          <div className="space-y-8">
+            {/* Main heading and description */}
+            <div className="space-y-6">
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="font-display text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-light text-white leading-[1.1]"
+              >
+                Bora: <span className="text-emerald-400">100 usuários</span> usando
+                um app que eu criei do zero em 26 dias
+              </motion.h1>
+
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="text-lg lg:text-xl text-neutral-400"
+              >
+                Como eu construí um app de hábitos — do Figma ao código, do design
+                ao deploy — e validei a ideia com usuários reais.
+              </motion.p>
+
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="text-neutral-500"
+              >
+                Apps de hábitos costumam ser complicados demais. Eu queria criar
+                algo diferente: simples, bonito e que realmente ajudasse as
+                pessoas. O resultado? Mais de 100 usuários usando em menos de um mês.
+              </motion.p>
+            </div>
+
+            {/* Metrics cards */}
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-white leading-[1.1]"
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="grid grid-cols-1 sm:grid-cols-3 gap-4"
             >
-              Bora: <span className="text-emerald-400">100 usuários</span> usando
-              um app que eu criei do zero em 26 dias
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-xl text-neutral-400"
-            >
-              Como eu construí um app de hábitos — do Figma ao código, do design
-              ao deploy — e validei a ideia com usuários reais.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-neutral-500"
-            >
-              Apps de hábitos costumam ser complicados demais. Eu queria criar
-              algo diferente: simples, bonito e que realmente ajudasse as
-              pessoas. O resultado? Mais de 100 usuários usando em menos de um mês.
-            </motion.p>
-          </div>
-
-          {/* Metrics cards - centered and distributed horizontally */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="flex justify-center"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl w-full">
               {heroStats.map((stat, idx) => (
                 <motion.div
                   key={stat.label}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.5 + idx * 0.1 }}
-                  className="group relative p-5 rounded-2xl bg-neutral-900/60 ring-1 ring-white/10 hover:ring-emerald-500/30 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+                  className="group relative p-4 rounded-2xl bg-neutral-900/60 ring-1 ring-white/10 hover:ring-emerald-500/30 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
                 >
                   {/* Background glow on hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 via-emerald-500/5 to-emerald-500/0 opacity-0 group-hover:opacity-100 transition-opacity" />
 
                   <div className="relative flex flex-col items-center text-center">
-                    <div className="p-3 rounded-xl bg-emerald-500/10 ring-1 ring-emerald-500/20 group-hover:bg-emerald-500/20 transition-colors mb-3">
-                      <stat.icon className="w-5 h-5 text-emerald-400" />
+                    <div className="p-2.5 rounded-xl bg-emerald-500/10 ring-1 ring-emerald-500/20 group-hover:bg-emerald-500/20 transition-colors mb-2">
+                      <stat.icon className="w-4 h-4 text-emerald-400" />
                     </div>
-                    <p className="text-3xl font-light text-white mb-1">
+                    <p className="text-2xl font-light text-white mb-1">
                       {stat.value}
                     </p>
-                    <p className="text-sm text-neutral-400">
+                    <p className="text-xs text-neutral-400">
                       {stat.label}
                     </p>
                   </div>
                 </motion.div>
               ))}
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
 
-          {/* App mockup image - full width below */}
+          {/* Right column - Mockup */}
           <ParallaxElement speed={0.08}>
             <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="relative max-w-2xl mx-auto"
+              className="relative"
             >
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
                 <Image
