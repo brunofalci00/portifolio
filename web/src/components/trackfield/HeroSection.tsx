@@ -99,9 +99,9 @@ export function HeroSection() {
 
           {/* Column 2: Hero Photo - Right */}
           <motion.div
-            initial={{ opacity: 0, x: 40, filter: "blur(8px)" }}
-            animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
-            transition={{ duration: 1, delay: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+            initial={{ opacity: 0, y: 30, x: 30 }}
+            animate={{ opacity: 1, y: 0, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
             style={{ y }}
             className="relative order-2 lg:order-none"
           >

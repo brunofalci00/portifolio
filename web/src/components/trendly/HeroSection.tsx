@@ -59,28 +59,24 @@ export function HeroSection() {
           <span className="text-neutral-300">Trendly</span>
         </motion.div>
 
-        {/* Badges */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="flex flex-wrap items-center gap-3 mb-8"
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 ring-1 ring-white/10">
-            <span className="text-sm text-neutral-300">Case Study</span>
-          </div>
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 ring-1 ring-emerald-500/20">
-            <span className="text-sm text-emerald-400">Growth Marketing</span>
-          </div>
-        </motion.div>
-
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left content */}
-          <div className="space-y-8">
+          <div className="space-y-6 lg:space-y-8">
+            {/* Badge única */}
+            <motion.div
+              initial={{ opacity: 0, y: 20, x: -30 }}
+              animate={{ opacity: 1, y: 0, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 ring-1 ring-white/10"
+            >
+              <span className="text-xs lg:text-sm text-neutral-300">
+                Case Study · Growth Marketing · 2023
+              </span>
+            </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               className="font-display text-5xl sm:text-6xl lg:text-6xl font-light text-white leading-[1.1]"
             >
               De R$0 a{" "}
@@ -92,7 +88,7 @@ export function HeroSection() {
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               className="text-base text-neutral-300 max-w-lg leading-relaxed"
             >
               Como transformei um especialista invisível em autoridade digital: estratégia de conteúdo, funil de vendas e IA gerando receita real.
@@ -157,9 +153,9 @@ export function HeroSection() {
           <div>
             <ParallaxElement speed={0.08}>
               <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
+                initial={{ opacity: 0, y: 30, x: 30 }}
+                animate={{ opacity: 1, y: 0, x: 0 }}
+                transition={{ duration: 0.7, delay: 0.6 }}
                 className="relative"
               >
                 {/* Professional image */}

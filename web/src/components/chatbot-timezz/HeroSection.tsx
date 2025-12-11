@@ -13,37 +13,6 @@ import {
 import { CounterAnimation } from "@/components/shared/CounterAnimation";
 import { WhatsAppMockup } from "./WhatsAppMockup";
 
-// Eyebrow Badge Component
-function EyebrowBadge() {
-  const badges = [
-    { icon: FileText, text: "Case Study" },
-    { icon: Bot, text: "AI Automation" },
-    { icon: Calendar, text: "2024" },
-  ];
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.15 }}
-      className="flex flex-wrap items-center justify-center gap-2"
-    >
-      {badges.map((badge, idx) => (
-        <motion.div
-          key={badge.text}
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4, delay: 0.15 + idx * 0.05 }}
-          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 ring-1 ring-white/10"
-        >
-          <badge.icon className="w-3.5 h-3.5 text-emerald-400" />
-          <span className="text-xs text-neutral-300">{badge.text}</span>
-        </motion.div>
-      ))}
-    </motion.div>
-  );
-}
-
 // Impact Metric Card Component (Emerald only)
 function ImpactMetricCard({
   value,
@@ -120,17 +89,24 @@ export function HeroSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left side - Text content */}
-          <div className="space-y-8 text-center lg:text-left">
-            {/* Eyebrow badges */}
-            <div className="lg:justify-start">
-              <EyebrowBadge />
-            </div>
+          <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
+            {/* Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 20, x: -30 }}
+              animate={{ opacity: 1, y: 0, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 ring-1 ring-white/10"
+            >
+              <span className="text-xs lg:text-sm text-neutral-300">
+                Case Study · AI Automation · 2024
+              </span>
+            </motion.div>
 
             {/* Title */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               className="space-y-4"
             >
               <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white leading-tight">
@@ -163,7 +139,7 @@ export function HeroSection() {
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
                 className="text-xl text-neutral-400"
               >
                 E aumentou conversão em{" "}
@@ -175,7 +151,7 @@ export function HeroSection() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
               className="p-5 rounded-xl bg-neutral-900/60 backdrop-blur-sm ring-1 ring-white/10"
             >
               <p className="text-neutral-400 leading-relaxed text-sm sm:text-base">
@@ -192,9 +168,9 @@ export function HeroSection() {
 
           {/* Right side - WhatsApp Chatbot Mockup */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            initial={{ opacity: 0, y: 30, x: 30 }}
+            animate={{ opacity: 1, y: 0, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
             className="relative w-full max-w-sm mx-auto"
           >
             <WhatsAppMockup />
