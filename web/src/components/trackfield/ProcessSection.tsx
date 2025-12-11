@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Users, Eye, Lightbulb, RotateCcw, Code, Table, Wrench } from "lucide-react";
 import { TimelineImpactChart } from "./TimelineImpactChart";
+import TypewriterText from "@/components/ui/typewriter-text";
 
 export function ProcessSection() {
   const steps = [
@@ -59,7 +60,7 @@ export function ProcessSection() {
               <span className="text-sm text-neutral-300">A Execução</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
-              A Jornada de Construção
+              <TypewriterText speed={50}>A Jornada de Construção</TypewriterText>
             </h2>
             <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
               Do diagnóstico à implementação: uma solução no-code que o time pudesse usar de forma autônoma.

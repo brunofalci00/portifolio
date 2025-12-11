@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Trophy, Clock, Zap, Users, TrendingDown } from "lucide-react";
 import { HandDrawnUnderline } from "@/components/shared/HandDrawnUnderline";
+import TypewriterText from "@/components/ui/typewriter-text";
 
 export function ResultsSection() {
   return (
@@ -23,7 +24,7 @@ export function ResultsSection() {
               <span className="text-sm text-neutral-300">Os Resultados</span>
             </div>
             <h2 className="relative inline-block font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
-              Meta Atingida
+              <TypewriterText speed={50}>Meta Atingida</TypewriterText>
               <HandDrawnUnderline width={280} delay={0.5} />
             </h2>
             <p className="text-lg text-neutral-400 max-w-2xl mx-auto">

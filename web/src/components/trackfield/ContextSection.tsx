@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Clock, AlertTriangle, TrendingUp, Target } from "lucide-react";
 import { RadialBeforeAfterChart } from "./RadialBeforeAfterChart";
+import TypewriterText from "@/components/ui/typewriter-text";
 
 const customEase = [0.25, 0.46, 0.45, 0.94] as const;
 
@@ -67,7 +68,7 @@ export function ContextSection() {
               <span className="text-sm text-neutral-300">O Contexto</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
-              O Desafio
+              <TypewriterText speed={50}>O Desafio</TypewriterText>
             </h2>
             <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
               Como um processo manual estava travando a operação de 300+ franquias.
