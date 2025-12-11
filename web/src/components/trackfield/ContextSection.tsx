@@ -131,58 +131,6 @@ export function ContextSection() {
           {/* Before/After Visual Comparison */}
           <RadialBeforeAfterChart />
 
-          {/* Goal Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7, delay: 0.7 }}
-            className="relative p-8 rounded-2xl bg-gradient-to-br from-emerald-500/5 to-transparent ring-1 ring-emerald-500/20 overflow-hidden"
-          >
-            {/* Decorative glow */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent" />
-
-            <div className="relative z-10 space-y-6">
-              <div className="flex items-center justify-center gap-3">
-                <div className="w-12 h-12 rounded-lg bg-emerald-500/10 ring-1 ring-emerald-500/20 flex items-center justify-center">
-                  <Target className="w-6 h-6 text-emerald-400" />
-                </div>
-                <h3 className="text-2xl font-light text-white">A Meta</h3>
-              </div>
-
-              <div className="text-center space-y-4">
-                <p className="text-3xl sm:text-4xl font-light text-white">
-                  De <span className="text-neutral-500">4 horas</span> para{" "}
-                  <span className="text-emerald-400">30 minutos</span>
-                </p>
-                <p className="text-lg text-neutral-400">em 2 meses</p>
-              </div>
-
-              {/* SMART Badges */}
-              <div className="flex flex-wrap justify-center gap-2 pt-4">
-                {[
-                  { label: "Específico", desc: "Reduzir tempo de 4h → 30min" },
-                  { label: "Mensurável", desc: "Métricas claras de tempo" },
-                  { label: "Atingível", desc: "Com automação no-code" },
-                  { label: "Relevante", desc: "Impacta 300+ franquias" },
-                  { label: "Temporal", desc: "Prazo de 2 meses" },
-                ].map((item, i) => (
-                  <motion.div
-                    key={item.label}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: 0.8 + i * 0.05 }}
-                    className="px-3 py-1.5 rounded-full bg-emerald-500/10 ring-1 ring-emerald-500/20 text-xs text-emerald-400"
-                    title={item.desc}
-                  >
-                    {item.label}
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </motion.div>
-
           {/* Key Stats */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
