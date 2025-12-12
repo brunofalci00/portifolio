@@ -12,7 +12,8 @@ export function LanguageSwitcher() {
 
   const switchLanguage = () => {
     const nextLocale = locale === 'pt-BR' ? 'en' : 'pt-BR';
-    router.replace(pathname, { locale: nextLocale });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    router.replace(pathname as any, { locale: nextLocale });
   };
 
   return (
