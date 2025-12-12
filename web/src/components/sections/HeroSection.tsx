@@ -61,20 +61,22 @@ export function HeroSection({ onScrollToProjects }: HeroSectionProps) {
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
               >
                 <h2 className="leading-tight text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-light tracking-tight font-display text-neutral-300">
-                  {t('subtitle.prefix')}{" "}
-                  <RotatingText
-                    texts={rotating}
-                    mainClassName="px-2 sm:px-3 md:px-4 bg-emerald-400 text-neutral-950 overflow-hidden py-1 sm:py-1.5 md:py-2 rounded-lg inline-flex"
-                    staggerFrom="last"
-                    initial={{ y: "100%" }}
-                    animate={{ y: 0 }}
-                    exit={{ y: "-120%" }}
-                    staggerDuration={0.025}
-                    splitLevelClassName="overflow-hidden"
-                    transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                    rotationInterval={2500}
-                  />{" "}
-                  <span className="block sm:inline mt-2 sm:mt-0">{t('subtitle.suffix')}</span>
+                  {t('subtitle.prefix')}
+                  <span className="block mt-2">
+                    <RotatingText
+                      texts={rotating}
+                      mainClassName="px-2 sm:px-3 md:px-4 bg-emerald-400 text-neutral-950 overflow-hidden py-1 sm:py-1.5 md:py-2 rounded-lg inline-flex"
+                      staggerFrom="last"
+                      initial={{ y: "100%" }}
+                      animate={{ y: 0 }}
+                      exit={{ y: "-120%" }}
+                      staggerDuration={0.025}
+                      splitLevelClassName="overflow-hidden"
+                      transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                      rotationInterval={2500}
+                    />{" "}
+                    {t('subtitle.suffix')}
+                  </span>
                 </h2>
               </motion.div>
 
