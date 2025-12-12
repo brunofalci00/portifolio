@@ -1,19 +1,35 @@
 'use client';
 
 import { useLocale, useTranslations } from 'next-intl';
-import { useRouter, usePathname } from '@/i18n/navigation';
+import { usePathname as useNextPathname } from 'next/navigation';
+import { useRouter } from '@/i18n/navigation';
 import { Globe } from 'lucide-react';
+import { routing } from '@/i18n/routing';
 
 export function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
-  const pathname = usePathname();
+  const fullPathname = useNextPathname();
   const t = useTranslations('common.language');
 
   const switchLanguage = () => {
     const nextLocale = locale === 'pt-BR' ? 'en' : 'pt-BR';
+
+    // Remove o prefixo do locale atual do pathname
+    let pathWithoutLocale = fullPathname;
+    for (const loc of routing.locales) {
+      if (fullPathname.startsWith(`/${loc}/`)) {
+        pathWithoutLocale = fullPathname.slice(`/${loc}`.length);
+        break;
+      } else if (fullPathname === `/${loc}`) {
+        pathWithoutLocale = '/';
+        break;
+      }
+    }
+
+    // Navega para o mesmo path com o novo locale
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    router.replace(pathname as any, { locale: nextLocale });
+    router.replace(pathWithoutLocale as any, { locale: nextLocale });
   };
 
   return (
