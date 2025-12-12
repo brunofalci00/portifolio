@@ -1,20 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Lightbulb, Code2, Users } from "lucide-react";
 import ScrollStack, { ScrollStackItem } from "@/components/ui/ScrollStack";
 
-const pillars = [
+// Icon and style configurations that don't need translation
+const pillarStyles = [
   {
-    title: "Estratégia",
     icon: Lightbulb,
-    description: "Transformando insights em direção clara para o negócio",
-    skills: [
-      "Positioning e messaging",
-      "GTM e growth loops",
-      "Pesquisa e jornada do cliente",
-      "Narrativas orientadas a dados",
-    ],
     gradient: "from-neutral-900 to-neutral-800",
     bulletColor: "bg-emerald-500",
     iconBg: "bg-emerald-500",
@@ -22,15 +16,7 @@ const pillars = [
     borderColor: "ring-emerald-500/30",
   },
   {
-    title: "Tecnologia",
     icon: Code2,
-    description: "Construindo soluções que escalam com eficiência",
-    skills: [
-      "IA e automações de processos",
-      "Full-stack: apps, chatbots, sites",
-      "Instrumentação e métricas",
-      "SEO e performance",
-    ],
     gradient: "from-neutral-800 to-neutral-700",
     bulletColor: "bg-white",
     iconBg: "bg-white",
@@ -38,15 +24,7 @@ const pillars = [
     borderColor: "ring-white/20",
   },
   {
-    title: "Liderança",
     icon: Users,
-    description: "Alinhando pessoas e processos para resultados",
-    skills: [
-      "Gestão de stakeholders",
-      "Treinamentos e playbooks",
-      "Comunidade e suporte",
-      "Operações enxutas",
-    ],
     gradient: "from-emerald-600 to-emerald-700",
     bulletColor: "bg-emerald-200",
     iconBg: "bg-white",
@@ -56,7 +34,17 @@ const pillars = [
 ];
 
 interface PillarCardProps {
-  pillar: (typeof pillars)[0];
+  pillar: {
+    title: string;
+    description: string;
+    skills: string[];
+    icon: typeof Lightbulb;
+    gradient: string;
+    bulletColor: string;
+    iconBg: string;
+    iconColor: string;
+    borderColor: string;
+  };
   index: number;
 }
 
@@ -125,6 +113,19 @@ function PillarCard({ pillar, index }: PillarCardProps) {
 }
 
 export function SkillsSummarySection() {
+  const t = useTranslations('home.skills');
+  const pillarsData = t.raw('pillars') as Array<{
+    title: string;
+    description: string;
+    skills: string[];
+  }>;
+
+  // Merge translated content with styles
+  const pillars = pillarsData.map((pillar, index) => ({
+    ...pillar,
+    ...pillarStyles[index],
+  }));
+
   return (
     <section id="skills" className="relative">
       {/* Header - Outside ScrollStack */}
@@ -137,15 +138,14 @@ export function SkillsSummarySection() {
           className="space-y-4 text-center max-w-3xl mx-auto"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 ring-1 ring-white/10">
-            <span className="text-sm text-neutral-300">Minhas Habilidades</span>
+            <span className="text-sm text-neutral-300">{t('badge')}</span>
           </div>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
-            Onde Estratégia Encontra a{" "}
-            <span className="text-emerald-400">Execução</span>
+            {t('headline.part1')}{" "}
+            <span className="text-emerald-400">{t('headline.highlight')}</span>
           </h2>
           <p className="text-neutral-400 text-lg">
-            Combinação única de estratégia, tecnologia e liderança para unir
-            visão empreendedora, gestão de clientes e execução full-stack.
+            {t('description')}
           </p>
         </motion.div>
       </div>

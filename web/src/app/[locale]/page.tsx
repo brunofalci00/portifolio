@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ImpactNumbersSection } from "@/components/sections/ImpactNumbersSection";
@@ -17,6 +18,7 @@ import { SideSocials } from "@/components/layout/SideSocials";
 import { SectionQuote } from "@/components/layout/SectionQuote";
 
 export default function Home() {
+  const t = useTranslations('home');
   const projectsRef = useRef<HTMLDivElement>(null);
 
   const scrollToProjects = () => {
@@ -44,9 +46,7 @@ export default function Home() {
         </section>
 
         {/* Quote: Hero → Impact */}
-        <SectionQuote
-          quote="Estratégia sem execução é alucinação. Execução sem estratégia é desperdício."
-        />
+        <SectionQuote quote={t('quotes.strategyExecution')} />
 
         {/* Impacto Section */}
         <section id="impacto">
@@ -64,9 +64,7 @@ export default function Home() {
         </section>
 
         {/* Quote: Skills → Projetos */}
-        <SectionQuote
-          quote="O melhor portfólio é a soma dos problemas resolvidos e do impacto gerado."
-        />
+        <SectionQuote quote={t('quotes.portfolio')} />
 
         {/* Projetos Section */}
         <section id="projetos">
@@ -75,8 +73,8 @@ export default function Home() {
 
         {/* Transition to Jornada */}
         <TransitionSection
-          title="Jornada"
-          subtitle="Do fundamento à execução"
+          title={t('transition.title')}
+          subtitle={t('transition.subtitle')}
         />
 
         {/* Jornada / About Section */}
@@ -92,22 +90,19 @@ export default function Home() {
 
       <footer className="py-8 border-t border-white/10 bg-neutral-950">
         <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-neutral-500">
-          <p>
-            &copy; {new Date().getFullYear()} Bruno Falci. Todos os direitos
-            reservados.
-          </p>
+          <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
           <div className="flex items-center gap-6">
             <a
               href="https://linkedin.com/in/brunofalci"
               className="text-neutral-400 hover:text-white transition-colors"
             >
-              LinkedIn
+              {t('footer.linkedin')}
             </a>
             <a
               href="mailto:brunofalci2000@gmail.com"
               className="text-neutral-400 hover:text-white transition-colors"
             >
-              Email
+              {t('footer.email')}
             </a>
           </div>
         </div>

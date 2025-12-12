@@ -1,53 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { ParallaxElement } from "@/components/scroll/ParallaxElement";
 import { SectionContainer } from "@/components/layout/SectionContainer";
 
-const metrics = [
-  {
-    value: "+50%",
-    title: "Aumento de Receita",
-    context: "Trendly - Consultoria de Growth",
-  },
-  {
-    value: "-30%",
-    title: "Redução de Custos com IA",
-    context: "Automações de processos",
-  },
-  {
-    value: "100+",
-    title: "Usuários Ativos",
-    context: "App de Hábito - Full-Stack",
-  },
-  {
-    value: "+150%",
-    title: "Aumento de Tráfego Orgânico",
-    context: "Zippi - Estratégia de SEO",
-  },
-  {
-    value: "+1.0",
-    title: "Melhoria em App Ratings",
-    context: "Zippi - Gestão de Comunidade",
-  },
-  {
-    value: "80%",
-    title: "Automações de Processos",
-    context: "Track & Field - Varejo",
-  },
-  {
-    value: "3+",
-    title: "Sites Desenvolvidos",
-    context: "Execução técnica e landing pages",
-  },
-  {
-    value: "50%",
-    title: "Leads Qualificados",
-    context: "Chatbot B2B - Funil automatizado",
-  },
-];
-
 export function ImpactNumbersSection() {
+  const t = useTranslations('home.impact');
+  const metrics = t.raw('metrics') as Array<{
+    value: string;
+    title: string;
+    context: string;
+  }>;
   return (
     <SectionContainer className="px-6 md:px-12">
       <div className="space-y-12">
@@ -60,16 +24,13 @@ export function ImpactNumbersSection() {
           className="space-y-4 text-center max-w-3xl mx-auto"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 ring-1 ring-white/10">
-            <span className="text-sm text-neutral-300">Impacto em Números</span>
+            <span className="text-sm text-neutral-300">{t('badge')}</span>
           </div>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
-            Resultados que <span className="text-emerald-400">Falam por Si</span>
+            {t('headline.part1')} <span className="text-emerald-400">{t('headline.highlight')}</span>
           </h2>
           <p className="text-neutral-400 text-lg leading-relaxed">
-            Cada projeto é um estudo de caso documentado onde aplico a
-            metodologia Hypothesis → Test → Result → Learning. Aqui estão os
-            KPIs consolidados que demonstram meu impacto em Growth, Produto e
-            Operações.
+            {t('description')}
           </p>
         </motion.div>
 

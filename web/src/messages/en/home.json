@@ -1,0 +1,269 @@
+{
+  "hero": {
+    "badge": "Available for projects",
+    "headline": {
+      "part1": "The",
+      "highlight": "Customer-Centric",
+      "part2": " Product Builder"
+    },
+    "subtitle": {
+      "prefix": "Transforming Strategy into Scalable",
+      "suffix": ""
+    },
+    "rotating": ["Products", "Growth", "Results", "Experiences"],
+    "description": "Marketing and Product professional with 4 years of experience in Growth, AI, and full-stack development. Specialized in structuring Go-to-Market strategies and building products that scale.",
+    "cta": {
+      "projects": "View Projects",
+      "contact": "Send Message"
+    },
+    "scroll": "Scroll"
+  },
+  "impact": {
+    "badge": "Impact in Numbers",
+    "headline": {
+      "part1": "Results that",
+      "highlight": "Speak for Themselves"
+    },
+    "description": "Each project is a documented case study where I apply the Hypothesis → Test → Result → Learning methodology. Here are the consolidated KPIs demonstrating my impact in Growth, Product, and Operations.",
+    "metrics": [
+      {
+        "value": "+50%",
+        "title": "Revenue Increase",
+        "context": "Trendly - Growth Consulting"
+      },
+      {
+        "value": "-30%",
+        "title": "AI Cost Reduction",
+        "context": "Process automations"
+      },
+      {
+        "value": "100+",
+        "title": "Active Users",
+        "context": "Habit App - Full-Stack"
+      },
+      {
+        "value": "+150%",
+        "title": "Organic Traffic Increase",
+        "context": "Zippi - SEO Strategy"
+      },
+      {
+        "value": "+1.0",
+        "title": "App Rating Improvement",
+        "context": "Zippi - Community Management"
+      },
+      {
+        "value": "80%",
+        "title": "Process Automations",
+        "context": "Track & Field - Retail"
+      },
+      {
+        "value": "3+",
+        "title": "Websites Developed",
+        "context": "Technical execution and landing pages"
+      },
+      {
+        "value": "50%",
+        "title": "Qualified Leads",
+        "context": "B2B Chatbot - Automated Funnel"
+      }
+    ]
+  },
+  "partners": {
+    "headline": {
+      "part1": "Where I Generated",
+      "highlight": "Impact"
+    }
+  },
+  "skills": {
+    "badge": "My Skills",
+    "headline": {
+      "part1": "Where Strategy Meets",
+      "highlight": "Execution"
+    },
+    "description": "Unique combination of strategy, technology, and leadership to unite entrepreneurial vision, client management, and full-stack execution.",
+    "pillars": [
+      {
+        "title": "Strategy",
+        "description": "Transforming insights into clear business direction",
+        "skills": [
+          "Positioning and messaging",
+          "GTM and growth loops",
+          "Customer research and journey",
+          "Data-driven narratives"
+        ]
+      },
+      {
+        "title": "Technology",
+        "description": "Building solutions that scale efficiently",
+        "skills": [
+          "AI and process automations",
+          "Full-stack: apps, chatbots, sites",
+          "Instrumentation and metrics",
+          "SEO and performance"
+        ]
+      },
+      {
+        "title": "Leadership",
+        "description": "Aligning people and processes for results",
+        "skills": [
+          "Stakeholder management",
+          "Training and playbooks",
+          "Community and support",
+          "Lean operations"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "badge": "Impact Projects",
+    "headline": {
+      "part1": "Proof of Execution and",
+      "highlight": "Results"
+    },
+    "description": "Each card follows the STAR logic or Hypothesis → Test → Result → Learning, connecting strategy, execution, and metrics.",
+    "cta": "View Case Study",
+    "items": [
+      {
+        "title": "AI Growth Hacking: +50% Revenue and Visibility Increase",
+        "subtitle": "Trendly (Consulting) — Hypothesis → Test → Result → Learning",
+        "category": "Growth & AI"
+      },
+      {
+        "title": "Product Builder: Full-Stack Management of Habit App with 100+ Users",
+        "subtitle": "Product built from scratch with complete ownership",
+        "category": "Full-Stack"
+      },
+      {
+        "title": "Funnel Automations: B2B Lead Qualification Chatbot",
+        "subtitle": "Qualified leads and reduced response time",
+        "category": "Automation"
+      },
+      {
+        "title": "Acquisition Optimization: Organic Visibility and Performance Increase",
+        "subtitle": "Zippi (SEO) — organic traction and targeted content",
+        "category": "SEO"
+      },
+      {
+        "title": "User Empathy: Community Management and Review Improvement",
+        "subtitle": "Zippi (Reviews/Community) — ratings and positive feedback",
+        "category": "Community"
+      },
+      {
+        "title": "Operational Efficiency: Retail Remodeling and Automations",
+        "subtitle": "Track & Field — playbooks and lean processes",
+        "category": "Operations"
+      }
+    ]
+  },
+  "about": {
+    "badge": "Journey",
+    "headline": {
+      "part1": "From ESPM to",
+      "highlight": "Product Builder"
+    },
+    "description": "Progression from communications student to marketing professional and entrepreneur builder, connecting large-scale, omnichannel experiences with full-stack execution.",
+    "timeline": [
+      {
+        "year": "2015",
+        "title": "International German Course",
+        "description": "Munich, Germany (EF Education First). Openness to international experiences and continuous learning. First experience living abroad, developing independence and global vision."
+      },
+      {
+        "year": "2020-2024",
+        "title": "Projects with Major Brands",
+        "description": "High-complexity marketing, positioning, and large-scale branding with globally recognized brands, in partnership with ESPM.",
+        "details": "Worked with brands like Globoplay, Fazenda Futuro, UNESCO, Havaianas, and P&G on marketing, branding, and strategic communication projects."
+      },
+      {
+        "year": "2020-2024",
+        "title": "Bachelor in Communications (ESPM)",
+        "description": "Solid foundation in communication strategy, marketing, and critical thinking. One of Brazil's best marketing schools, with a focus on creativity and business strategy."
+      },
+      {
+        "year": "2022-2024",
+        "title": "Zippi - Growth",
+        "description": "SEO, brand performance, influencer marketing, community management, and data analysis."
+      },
+      {
+        "year": "2024-2025",
+        "title": "Track & Field - Retail",
+        "description": "Retail marketing management, franchises, events, and training. Omnichannel vision, online + offline."
+      },
+      {
+        "year": "2025",
+        "title": "Entrepreneur Builder",
+        "description": "Full-stack execution, AI, and autonomous leadership. Building products from scratch with complete ownership.",
+        "projects": [
+          "Trendly - Growth Consulting with AI",
+          "Habit App - Full-Stack Product",
+          "B2B Chatbot - Funnel Automations",
+          "Websites and Landing Pages"
+        ]
+      }
+    ]
+  },
+  "quotes": {
+    "strategyExecution": "Strategy without execution is hallucination. Execution without strategy is waste.",
+    "portfolio": "The best portfolio is the sum of problems solved and impact generated."
+  },
+  "transition": {
+    "title": "Journey",
+    "subtitle": "From fundamentals to execution"
+  },
+  "contact": {
+    "badge": "Contact",
+    "headline": {
+      "part1": "Let's Build the",
+      "highlight": "Next Big Project?"
+    },
+    "description": "If you're looking for a professional who combines strategic Growth vision with the ability to build and optimize products from scratch, always focusing on the customer journey, let's talk. I'm open to new opportunities, partnerships, and challenges that generate real impact.",
+    "info": {
+      "email": {
+        "label": "Email",
+        "value": "brunofalci2000@gmail.com"
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/brunofalci"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "value": "(11) 99762-7772"
+      },
+      "location": {
+        "label": "Location",
+        "value": "São Paulo, Brazil"
+      },
+      "availability": {
+        "status": "Available for projects",
+        "response": "Responding within 24 hours"
+      }
+    },
+    "form": {
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone/WhatsApp (optional)",
+        "subject": "Subject",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Your name",
+        "email": "your@email.com",
+        "phone": "(+55) 11 99762-7772",
+        "subject": "How can I help?",
+        "message": "Tell me about your product, challenge, and goals..."
+      },
+      "button": {
+        "send": "Send Message",
+        "sending": "Sending...",
+        "sent": "Message sent!"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Bruno Falci. All rights reserved.",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  }
+}

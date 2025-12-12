@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { GlowingButton, GlowingButtonLink } from "@/components/ui/glowing-button";
 import { RotatingText } from "@/components/ui/rotating-text";
 import { ArrowRight, ChevronDown } from "lucide-react";
@@ -10,6 +11,9 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ onScrollToProjects }: HeroSectionProps) {
+  const t = useTranslations('home.hero');
+  const rotating = t.raw('rotating') as string[];
+
   return (
     <section className="min-h-screen flex items-center relative overflow-hidden">
       {/* Subtle diagonal lines - decorative */}
@@ -34,7 +38,7 @@ export function HeroSection({ onScrollToProjects }: HeroSectionProps) {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
                 </span>
-                <span className="text-sm text-neutral-200">Disponível para projetos</span>
+                <span className="text-sm text-neutral-200">{t('badge')}</span>
               </motion.div>
 
               {/* H1 - Main Tagline */}
@@ -44,8 +48,9 @@ export function HeroSection({ onScrollToProjects }: HeroSectionProps) {
                 transition={{ duration: 0.8, ease: "easeOut" }}
               >
                 <h1 className="leading-tight text-[32px] sm:text-[44px] md:text-[56px] lg:text-[68px] xl:text-[80px] font-light tracking-tighter font-display text-white">
-                  O Product Builder{" "}
-                  <span className="text-emerald-400">Customer-Centric</span>
+                  {t('headline.part1')}{" "}
+                  <span className="text-emerald-400">{t('headline.highlight')}</span>
+                  {t.has('headline.part2') && t('headline.part2')}
                 </h1>
               </motion.div>
 
@@ -56,9 +61,9 @@ export function HeroSection({ onScrollToProjects }: HeroSectionProps) {
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
               >
                 <h2 className="leading-tight text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-light tracking-tight font-display text-neutral-300">
-                  Transformo Estratégia em{" "}
+                  {t('subtitle.prefix')}{" "}
                   <RotatingText
-                    texts={["Produto", "Growth", "Resultados", "Experiências"]}
+                    texts={rotating}
                     mainClassName="px-2 sm:px-3 md:px-4 bg-emerald-400 text-neutral-950 overflow-hidden py-1 sm:py-1.5 md:py-2 rounded-lg inline-flex"
                     staggerFrom="last"
                     initial={{ y: "100%" }}
@@ -69,7 +74,7 @@ export function HeroSection({ onScrollToProjects }: HeroSectionProps) {
                     transition={{ type: "spring", damping: 30, stiffness: 400 }}
                     rotationInterval={2500}
                   />{" "}
-                  <span className="block sm:inline mt-2 sm:mt-0">Escaláveis.</span>
+                  <span className="block sm:inline mt-2 sm:mt-0">{t('subtitle.suffix')}</span>
                 </h2>
               </motion.div>
 
@@ -80,9 +85,7 @@ export function HeroSection({ onScrollToProjects }: HeroSectionProps) {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="max-w-xl md:text-base lg:text-lg leading-relaxed font-medium text-neutral-50/90 mt-4"
               >
-                Profissional de Marketing e Produto com 4 anos de experiência em
-                Growth, IA e desenvolvimento full-stack. Especializado em
-                estruturar estratégias de Go-to-Market e construir produtos que crescem.
+                {t('description')}
               </motion.p>
 
               {/* CTAs */}
@@ -93,12 +96,12 @@ export function HeroSection({ onScrollToProjects }: HeroSectionProps) {
                 className="flex flex-wrap gap-4 pt-4"
               >
                 <GlowingButton onClick={onScrollToProjects}>
-                  <span>Ver Projetos</span>
+                  <span>{t('cta.projects')}</span>
                   <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" />
                 </GlowingButton>
 
                 <GlowingButtonLink href="#contato">
-                  <span>Enviar Mensagem</span>
+                  <span>{t('cta.contact')}</span>
                   <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" />
                 </GlowingButtonLink>
               </motion.div>
@@ -114,7 +117,7 @@ export function HeroSection({ onScrollToProjects }: HeroSectionProps) {
           transition={{ delay: 1 }}
           className="mx-auto mt-16 flex flex-col items-center gap-2 text-neutral-400 hover:text-white transition-colors"
         >
-          <span className="text-xs uppercase tracking-widest">Scroll</span>
+          <span className="text-xs uppercase tracking-widest">{t('scroll')}</span>
           <ChevronDown className="w-5 h-5 animate-bounce" />
         </motion.button>
       </div>

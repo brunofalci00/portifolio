@@ -1,0 +1,268 @@
+{
+  "hero": {
+    "badge": "Disponível para projetos",
+    "headline": {
+      "part1": "O Product Builder",
+      "highlight": "Customer-Centric"
+    },
+    "subtitle": {
+      "prefix": "Transformo Estratégia em",
+      "suffix": "Escaláveis."
+    },
+    "rotating": ["Produto", "Growth", "Resultados", "Experiências"],
+    "description": "Profissional de Marketing e Produto com 4 anos de experiência em Growth, IA e desenvolvimento full-stack. Especializado em estruturar estratégias de Go-to-Market e construir produtos que crescem.",
+    "cta": {
+      "projects": "Ver Projetos",
+      "contact": "Enviar Mensagem"
+    },
+    "scroll": "Scroll"
+  },
+  "impact": {
+    "badge": "Impacto em Números",
+    "headline": {
+      "part1": "Resultados que",
+      "highlight": "Falam por Si"
+    },
+    "description": "Cada projeto é um estudo de caso documentado onde aplico a metodologia Hypothesis → Test → Result → Learning. Aqui estão os KPIs consolidados que demonstram meu impacto em Growth, Produto e Operações.",
+    "metrics": [
+      {
+        "value": "+50%",
+        "title": "Aumento de Receita",
+        "context": "Trendly - Consultoria de Growth"
+      },
+      {
+        "value": "-30%",
+        "title": "Redução de Custos com IA",
+        "context": "Automações de processos"
+      },
+      {
+        "value": "100+",
+        "title": "Usuários Ativos",
+        "context": "App de Hábito - Full-Stack"
+      },
+      {
+        "value": "+150%",
+        "title": "Aumento de Tráfego Orgânico",
+        "context": "Zippi - Estratégia de SEO"
+      },
+      {
+        "value": "+1.0",
+        "title": "Melhoria em App Ratings",
+        "context": "Zippi - Gestão de Comunidade"
+      },
+      {
+        "value": "80%",
+        "title": "Automações de Processos",
+        "context": "Track & Field - Varejo"
+      },
+      {
+        "value": "3+",
+        "title": "Sites Desenvolvidos",
+        "context": "Execução técnica e landing pages"
+      },
+      {
+        "value": "50%",
+        "title": "Leads Qualificados",
+        "context": "Chatbot B2B - Funil automatizado"
+      }
+    ]
+  },
+  "partners": {
+    "headline": {
+      "part1": "Onde Gerei",
+      "highlight": "Impacto"
+    }
+  },
+  "skills": {
+    "badge": "Minhas Habilidades",
+    "headline": {
+      "part1": "Onde Estratégia Encontra a",
+      "highlight": "Execução"
+    },
+    "description": "Combinação única de estratégia, tecnologia e liderança para unir visão empreendedora, gestão de clientes e execução full-stack.",
+    "pillars": [
+      {
+        "title": "Estratégia",
+        "description": "Transformando insights em direção clara para o negócio",
+        "skills": [
+          "Positioning e messaging",
+          "GTM e growth loops",
+          "Pesquisa e jornada do cliente",
+          "Narrativas orientadas a dados"
+        ]
+      },
+      {
+        "title": "Tecnologia",
+        "description": "Construindo soluções que escalam com eficiência",
+        "skills": [
+          "IA e automações de processos",
+          "Full-stack: apps, chatbots, sites",
+          "Instrumentação e métricas",
+          "SEO e performance"
+        ]
+      },
+      {
+        "title": "Liderança",
+        "description": "Alinhando pessoas e processos para resultados",
+        "skills": [
+          "Gestão de stakeholders",
+          "Treinamentos e playbooks",
+          "Comunidade e suporte",
+          "Operações enxutas"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "badge": "Projetos de Impacto",
+    "headline": {
+      "part1": "Prova de Execução e",
+      "highlight": "Resultados"
+    },
+    "description": "Cada card segue a lógica STAR ou Hypothesis → Test → Result → Learning, conectando estratégia, execução e métricas.",
+    "cta": "Ver Case Study",
+    "items": [
+      {
+        "title": "Growth Hacking com IA: Aumento de +50% em Receita e Visibilidade",
+        "subtitle": "Trendly (Consultoria) — Hypothesis → Test → Result → Learning",
+        "category": "Growth & IA"
+      },
+      {
+        "title": "Product Builder: Gestão Full-Stack de App de Hábito com 100+ Usuários",
+        "subtitle": "Produto construído do zero com ownership completo",
+        "category": "Full-Stack"
+      },
+      {
+        "title": "Automações de Funil: Chatbot de Qualificação de Leads B2B",
+        "subtitle": "Leads qualificados e tempo de atendimento reduzido",
+        "category": "Automação"
+      },
+      {
+        "title": "Otimização de Aquisição: Aumento de Visibilidade Orgânica e Performance",
+        "subtitle": "Zippi (SEO) — tração orgânica e conteúdo direcionado",
+        "category": "SEO"
+      },
+      {
+        "title": "Empatia com o Usuário: Gestão de Comunidade e Melhoria de Reviews",
+        "subtitle": "Zippi (Reviews/Comunidade) — ratings e feedbacks positivos",
+        "category": "Community"
+      },
+      {
+        "title": "Eficiência Operacional: Remodelação e Automações de Varejo",
+        "subtitle": "Track & Field — playbooks e processos enxutos",
+        "category": "Operações"
+      }
+    ]
+  },
+  "about": {
+    "badge": "Jornada",
+    "headline": {
+      "part1": "De ESPM ao",
+      "highlight": "Product Builder"
+    },
+    "description": "Progressão de estudante de comunicação para profissional de marketing e empreendedor builder, conectando experiências em grande escala, omnichannel e execução full-stack.",
+    "timeline": [
+      {
+        "year": "2015",
+        "title": "Curso de Alemão Internacional",
+        "description": "Munique, Alemanha (EF Education First). Abertura para experiências internacionais e aprendizado contínuo. Primeira experiência vivendo no exterior, desenvolvendo independência e visão global."
+      },
+      {
+        "year": "2020-2024",
+        "title": "Projetos em Grandes Marcas",
+        "description": "Marketing de alta complexidade, posicionamento e branding em grande escala com marcas reconhecidas globalmente, em parceria com a ESPM.",
+        "details": "Trabalhei com marcas como Globoplay, Fazenda Futuro, UNESCO, Havaianas e P&G em projetos de marketing, branding e comunicação estratégica."
+      },
+      {
+        "year": "2020-2024",
+        "title": "Graduação em Comunicação (ESPM)",
+        "description": "Fundação sólida em estratégia de comunicação, marketing e pensamento crítico. Uma das melhores escolas de marketing do Brasil, com foco em criatividade e estratégia de negócios."
+      },
+      {
+        "year": "2022-2024",
+        "title": "Zippi - Growth",
+        "description": "SEO, performance de marca, marketing de influência, community management e análise de dados."
+      },
+      {
+        "year": "2024-2025",
+        "title": "Track & Field - Varejo",
+        "description": "Gestão de marketing de varejo, franquias, eventos e treinamentos. Visão omnichannel online + offline."
+      },
+      {
+        "year": "2025",
+        "title": "Empreendedor Builder",
+        "description": "Execução full-stack, IA e liderança autônoma. Construindo produtos do zero com ownership completo.",
+        "projects": [
+          "Trendly - Consultoria de Growth com IA",
+          "App de Hábito - Produto Full-Stack",
+          "Chatbot B2B - Automações de Funil",
+          "Sites e Landing Pages"
+        ]
+      }
+    ]
+  },
+  "quotes": {
+    "strategyExecution": "Estratégia sem execução é alucinação. Execução sem estratégia é desperdício.",
+    "portfolio": "O melhor portfólio é a soma dos problemas resolvidos e do impacto gerado."
+  },
+  "transition": {
+    "title": "Jornada",
+    "subtitle": "Do fundamento à execução"
+  },
+  "contact": {
+    "badge": "Contato",
+    "headline": {
+      "part1": "Vamos Construir o",
+      "highlight": "Próximo Grande Projeto?"
+    },
+    "description": "Se você busca um profissional que une visão estratégica de Growth com capacidade de construir e otimizar produtos do zero, sempre com foco na jornada do cliente, vamos conversar. Estou aberto a novas oportunidades, parcerias e desafios que gerem impacto real.",
+    "info": {
+      "email": {
+        "label": "Email",
+        "value": "brunofalci2000@gmail.com"
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/brunofalci"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "value": "(11) 99762-7772"
+      },
+      "location": {
+        "label": "Localização",
+        "value": "São Paulo, Brasil"
+      },
+      "availability": {
+        "status": "Disponível para projetos",
+        "response": "Respondendo em até 24 horas"
+      }
+    },
+    "form": {
+      "labels": {
+        "name": "Nome",
+        "email": "Email",
+        "phone": "Telefone/WhatsApp (opcional)",
+        "subject": "Assunto",
+        "message": "Mensagem"
+      },
+      "placeholders": {
+        "name": "Seu nome",
+        "email": "seu@email.com",
+        "phone": "(+55) 11 99762-7772",
+        "subject": "Como posso ajudar?",
+        "message": "Conte sobre seu produto, desafio e objetivos..."
+      },
+      "button": {
+        "send": "Enviar Mensagem",
+        "sending": "Enviando...",
+        "sent": "Mensagem enviada!"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Bruno Falci. Todos os direitos reservados.",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  }
+}

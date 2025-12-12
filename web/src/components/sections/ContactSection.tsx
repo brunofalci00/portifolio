@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -10,6 +11,7 @@ import { Mail, Linkedin, MapPin, Send, Sparkles, Phone } from "lucide-react";
 import { SectionContainer } from "@/components/layout/SectionContainer";
 
 export function ContactSection() {
+  const t = useTranslations('home.contact');
   const [formState, setFormState] = useState<"idle" | "loading" | "success">(
     "idle"
   );
@@ -50,17 +52,14 @@ export function ContactSection() {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 ring-1 ring-white/10 mb-6">
-            <span className="text-sm text-neutral-300">Contato</span>
+            <span className="text-sm text-neutral-300">{t('badge')}</span>
           </div>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light text-white">
-            Vamos Construir o{" "}
-            <span className="text-emerald-400">Próximo Grande Projeto?</span>
+            {t('headline.part1')}{" "}
+            <span className="text-emerald-400">{t('headline.highlight')}</span>
           </h2>
           <p className="mt-6 text-lg text-neutral-400 max-w-2xl mx-auto">
-            Se você busca um profissional que une visão estratégica de Growth com capacidade
-            de construir e otimizar produtos do zero, sempre com foco na jornada do cliente,
-            vamos conversar. Estou aberto a novas oportunidades, parcerias e desafios que
-            gerem impacto real.
+            {t('description')}
           </p>
         </motion.div>
 
@@ -86,9 +85,9 @@ export function ContactSection() {
                 <Mail className="w-5 h-5 text-emerald-400" />
               </div>
               <div>
-                <p className="text-sm text-neutral-500">Email</p>
+                <p className="text-sm text-neutral-500">{t('info.email.label')}</p>
                 <p className="font-medium text-white">
-                  brunofalci2000@gmail.com
+                  {t('info.email.value')}
                 </p>
               </div>
             </motion.a>
@@ -108,9 +107,9 @@ export function ContactSection() {
                 <Linkedin className="w-5 h-5 text-emerald-400" />
               </div>
               <div>
-                <p className="text-sm text-neutral-500">LinkedIn</p>
+                <p className="text-sm text-neutral-500">{t('info.linkedin.label')}</p>
                 <p className="font-medium text-white">
-                  linkedin.com/in/brunofalci
+                  {t('info.linkedin.value')}
                 </p>
               </div>
             </motion.a>
@@ -130,8 +129,8 @@ export function ContactSection() {
                 <Phone className="w-5 h-5 text-emerald-400" />
               </div>
               <div>
-                <p className="text-sm text-neutral-500">WhatsApp</p>
-                <p className="font-medium text-white">(11) 99762-7772</p>
+                <p className="text-sm text-neutral-500">{t('info.whatsapp.label')}</p>
+                <p className="font-medium text-white">{t('info.whatsapp.value')}</p>
               </div>
             </motion.a>
 
@@ -147,8 +146,8 @@ export function ContactSection() {
                 <MapPin className="w-5 h-5 text-emerald-400" />
               </div>
               <div>
-                <p className="text-sm text-neutral-500">Localização</p>
-                <p className="font-medium text-white">São Paulo, Brasil</p>
+                <p className="text-sm text-neutral-500">{t('info.location.label')}</p>
+                <p className="font-medium text-white">{t('info.location.value')}</p>
               </div>
             </motion.div>
 
@@ -166,9 +165,9 @@ export function ContactSection() {
               </div>
               <div>
                 <p className="font-medium text-white">
-                  Disponível para projetos
+                  {t('info.availability.status')}
                 </p>
-                <p className="text-sm text-neutral-400">Respondendo em até 24 horas</p>
+                <p className="text-sm text-neutral-400">{t('info.availability.response')}</p>
               </div>
             </motion.div>
           </motion.div>
@@ -184,47 +183,47 @@ export function ContactSection() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name" className="text-neutral-300">Nome</Label>
+                    <Label htmlFor="name" className="text-neutral-300">{t('form.labels.name')}</Label>
                     <Input
                       id="name"
-                      placeholder="Seu nome"
+                      placeholder={t('form.placeholders.name')}
                       required
                       className="bg-neutral-950 ring-1 ring-white/10 border-0 text-white placeholder:text-neutral-500 focus:ring-emerald-400/50"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-neutral-300">Email</Label>
+                    <Label htmlFor="email" className="text-neutral-300">{t('form.labels.email')}</Label>
                     <Input
                       id="email"
                       type="email"
-                      placeholder="seu@email.com"
+                      placeholder={t('form.placeholders.email')}
                       required
                       className="bg-neutral-950 ring-1 ring-white/10 border-0 text-white placeholder:text-neutral-500 focus:ring-emerald-400/50"
                     />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-neutral-300">Telefone/WhatsApp (opcional)</Label>
+                  <Label htmlFor="phone" className="text-neutral-300">{t('form.labels.phone')}</Label>
                   <Input
                     id="phone"
                     type="tel"
-                    placeholder="(+55) 11 99762-7772"
+                    placeholder={t('form.placeholders.phone')}
                     className="bg-neutral-950 ring-1 ring-white/10 border-0 text-white placeholder:text-neutral-500 focus:ring-emerald-400/50"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="subject" className="text-neutral-300">Assunto</Label>
+                  <Label htmlFor="subject" className="text-neutral-300">{t('form.labels.subject')}</Label>
                   <Input
                     id="subject"
-                    placeholder="Como posso ajudar?"
+                    placeholder={t('form.placeholders.subject')}
                     className="bg-neutral-950 ring-1 ring-white/10 border-0 text-white placeholder:text-neutral-500 focus:ring-emerald-400/50"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="text-neutral-300">Mensagem</Label>
+                  <Label htmlFor="message" className="text-neutral-300">{t('form.labels.message')}</Label>
                   <Textarea
                     id="message"
-                    placeholder="Conte sobre seu produto, desafio e objetivos..."
+                    placeholder={t('form.placeholders.message')}
                     rows={5}
                     required
                     className="bg-neutral-950 ring-1 ring-white/10 border-0 text-white placeholder:text-neutral-500 focus:ring-emerald-400/50 resize-none"
@@ -249,16 +248,16 @@ export function ContactSection() {
                       >
                         <Sparkles className="w-4 h-4" />
                       </motion.div>
-                      Enviando...
+                      {t('form.button.sending')}
                     </>
                   ) : formState === "success" ? (
                     <>
                       <Sparkles className="w-4 h-4 mr-2" />
-                      Mensagem enviada!
+                      {t('form.button.sent')}
                     </>
                   ) : (
                     <>
-                      Enviar Mensagem
+                      {t('form.button.send')}
                       <Send className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </>
                   )}

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { LogoLoop } from "@/components/LogoLoop";
 import { SectionContainer } from "@/components/layout/SectionContainer";
 
@@ -16,6 +17,7 @@ const logos = [
 ];
 
 export function GrowthPartnersSection() {
+  const t = useTranslations('home.partners');
   return (
     <SectionContainer className="py-12 md:py-16 px-6 md:px-12">
       <div className="space-y-10">
@@ -27,7 +29,7 @@ export function GrowthPartnersSection() {
           transition={{ duration: 0.6 }}
           className="font-display text-2xl sm:text-3xl lg:text-4xl font-light text-white text-center"
         >
-          Onde Gerei <span className="text-emerald-400">Impacto</span>
+          {t('headline.part1')} <span className="text-emerald-400">{t('headline.highlight')}</span>
         </motion.h2>
 
         {/* Logo Carousel com fundo claro */}

@@ -3,50 +3,34 @@
 import { forwardRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { SectionContainer } from "@/components/layout/SectionContainer";
 
-const projects = [
+// Project images and links (don't change with locale)
+const projectAssets = [
   {
-    title: "Growth Hacking com IA: Aumento de +50% em Receita e Visibilidade",
-    subtitle: "Trendly (Consultoria) — Hypothesis → Test → Result → Learning",
     link: "/projetos/trendly",
-    category: "Growth & IA",
     image: "/media/projects/trendly_project.png",
   },
   {
-    title: "Product Builder: Gestão Full-Stack de App de Hábito com 100+ Usuários",
-    subtitle: "Produto construído do zero com ownership completo",
     link: "/projetos/bora",
-    category: "Full-Stack",
     image: "/media/projects/bora_project.png",
   },
   {
-    title: "Automações de Funil: Chatbot de Qualificação de Leads B2B",
-    subtitle: "Leads qualificados e tempo de atendimento reduzido",
     link: "/projetos/chatbot-timezz",
-    category: "Automação",
     image: "/media/projects/chatbot_project.png",
   },
   {
-    title: "Otimização de Aquisição: Aumento de Visibilidade Orgânica e Performance",
-    subtitle: "Zippi (SEO) — tração orgânica e conteúdo direcionado",
     link: "/projetos/zippi",
-    category: "SEO",
     image: "/media/projects/zippi_seo.png",
   },
   {
-    title: "Empatia com o Usuário: Gestão de Comunidade e Melhoria de Reviews",
-    subtitle: "Zippi (Reviews/Comunidade) — ratings e feedbacks positivos",
     link: "/projetos/zippi-reviews",
-    category: "Community",
     image: "/media/projects/zippi_reviews.png",
   },
   {
-    title: "Eficiência Operacional: Remodelação e Automações de Varejo",
-    subtitle: "Track & Field — playbooks e processos enxutos",
     link: "/projetos/trackfield",
-    category: "Operações",
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
   },
 ];
@@ -59,6 +43,18 @@ export const ProjectsImpactSection = forwardRef<
   HTMLDivElement,
   ProjectsImpactSectionProps
 >(function ProjectsImpactSection({ id = "projetos" }, ref) {
+  const t = useTranslations('home.projects');
+  const projectsData = t.raw('items') as Array<{
+    title: string;
+    subtitle: string;
+    category: string;
+  }>;
+
+  // Merge translated content with assets
+  const projects = projectsData.map((project, index) => ({
+    ...project,
+    ...projectAssets[index],
+  }));
   return (
     <SectionContainer ref={ref} className="px-6 md:px-12">
       <div className="space-y-12">
@@ -71,15 +67,14 @@ export const ProjectsImpactSection = forwardRef<
           className="space-y-4 text-center max-w-3xl mx-auto"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 ring-1 ring-white/10">
-            <span className="text-sm text-neutral-300">Projetos de Impacto</span>
+            <span className="text-sm text-neutral-300">{t('badge')}</span>
           </div>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-white">
-            Prova de Execução e{" "}
-            <span className="text-emerald-400">Resultados</span>
+            {t('headline.part1')}{" "}
+            <span className="text-emerald-400">{t('headline.highlight')}</span>
           </h2>
           <p className="text-neutral-400 text-lg">
-            Cada card segue a lógica STAR ou Hypothesis → Test → Result →
-            Learning, conectando estratégia, execução e métricas.
+            {t('description')}
           </p>
         </motion.div>
 
@@ -143,7 +138,7 @@ export const ProjectsImpactSection = forwardRef<
 
                   {/* CTA */}
                   <div className="flex items-center gap-2 text-sm text-emerald-400 pt-2">
-                    <span>Ver Case Study</span>
+                    <span>{t('cta')}</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>

@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Home",
+    "impact": "Impact",
+    "partners": "Partners",
+    "skills": "Skills",
+    "projects": "Projects",
+    "journey": "Journey",
+    "contact": "Contact"
+  },
+  "language": {
+    "pt": "PT",
+    "en": "EN",
+    "toggle": "Toggle language"
+  },
+  "buttons": {
+    "learnMore": "Learn More",
+    "viewMore": "View More",
+    "sendMessage": "Send Message",
+    "getInTouch": "Get In Touch",
+    "goBack": "Go Back",
+    "scrollDown": "Scroll Down"
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "instagram": "Instagram",
+    "email": "Email"
+  },
+  "footer": {
+    "copyright": "© 2025 Bruno Falci. All rights reserved.",
+    "madeWith": "Made with"
+  }
+}
