@@ -2,15 +2,15 @@
   "hero": {
     "badge": "Disponível para projetos",
     "headline": {
-      "part1": "O Product Builder",
-      "highlight": "Customer-Centric"
+      "part1": "Growth &",
+      "highlight": "Product Marketing"
     },
     "subtitle": {
       "prefix": "Transformo Estratégia em",
       "suffix": "Escaláveis."
     },
     "rotating": ["Produto", "Growth", "Resultados", "Experiências"],
-    "description": "Profissional de Marketing e Produto com 4 anos de experiência em Growth, IA e desenvolvimento full-stack. Especializado em estruturar estratégias de Go-to-Market e construir produtos que crescem.",
+    "description": "Profissional de Marketing e Produto com 4 anos de experiência em Growth, IA e execução técnica. Combino pensamento estratégico com capacidade de prototipar e automatizar usando ferramentas no-code e IA.",
     "cta": {
       "projects": "Ver Projetos",
       "contact": "Enviar Mensagem"
@@ -27,18 +27,13 @@
     "metrics": [
       {
         "value": "+50%",
-        "title": "Aumento de Receita",
+        "title": "Crescimento em Engajamento",
         "context": "Trendly - Consultoria de Growth"
       },
       {
-        "value": "-30%",
-        "title": "Redução de Custos com IA",
-        "context": "Automações de processos"
-      },
-      {
-        "value": "100+",
+        "value": "80+",
         "title": "Usuários Ativos",
-        "context": "App de Hábito - Full-Stack"
+        "context": "App de Hábito (Bora)"
       },
       {
         "value": "+150%",
@@ -79,7 +74,7 @@
       "part1": "Onde Estratégia Encontra a",
       "highlight": "Execução"
     },
-    "description": "Combinação única de estratégia, tecnologia e liderança para unir visão empreendedora, gestão de clientes e execução full-stack.",
+    "description": "Combinação única de estratégia, tecnologia e liderança para unir visão empreendedora, gestão de clientes e execução técnica.",
     "pillars": [
       {
         "title": "Estratégia",
@@ -93,12 +88,12 @@
       },
       {
         "title": "Tecnologia",
-        "description": "Construindo soluções que escalam com eficiência",
+        "description": "Prototipando soluções com ferramentas no-code e IA",
         "skills": [
-          "IA e automações de processos",
-          "Full-stack: apps, chatbots, sites",
-          "Instrumentação e métricas",
-          "SEO e performance"
+          "Automações com IA (ChatGPT, Claude, n8n)",
+          "MVPs rápidos: apps, chatbots, landing pages",
+          "Google Analytics e dashboards",
+          "SEO e performance web"
         ]
       },
       {
@@ -128,9 +123,9 @@
         "category": "Growth & IA"
       },
       {
-        "title": "Product Builder: Gestão Full-Stack de App de Hábito com 100+ Usuários",
-        "subtitle": "Produto construído do zero com ownership completo",
-        "category": "Full-Stack"
+        "title": "MVP de App de Hábito: 80+ Usuários Ativos",
+        "subtitle": "Produto desenvolvido com React, Supabase e IA",
+        "category": "Produto"
       },
       {
         "title": "Automações de Funil: Chatbot de Qualificação de Leads B2B",
@@ -157,10 +152,10 @@
   "about": {
     "badge": "Jornada",
     "headline": {
-      "part1": "De ESPM ao",
-      "highlight": "Product Builder"
+      "part1": "De ESPM a",
+      "highlight": "Growth & Product Marketing"
     },
-    "description": "Progressão de estudante de comunicação para profissional de marketing e empreendedor builder, conectando experiências em grande escala, omnichannel e execução full-stack.",
+    "description": "Progressão de estudante de comunicação para profissional de marketing e growth, conectando experiências em grande escala, omnichannel e execução técnica com ferramentas no-code e IA.",
     "timeline": [
       {
         "year": "2015",
@@ -190,13 +185,13 @@
       },
       {
         "year": "2025",
-        "title": "Empreendedor Builder",
-        "description": "Execução full-stack, IA e liderança autônoma. Construindo produtos do zero com ownership completo.",
+        "title": "Growth & Product Marketing",
+        "description": "Combinando estratégia de growth com execução técnica usando ferramentas no-code e IA. Foco em MVPs rápidos e automações.",
         "projects": [
           "Trendly - Consultoria de Growth com IA",
-          "App de Hábito - Produto Full-Stack",
+          "App Bora - MVP de hábitos com 80+ usuários",
           "Chatbot B2B - Automações de Funil",
-          "Sites e Landing Pages"
+          "Landing Pages e Sites"
         ]
       }
     ]
