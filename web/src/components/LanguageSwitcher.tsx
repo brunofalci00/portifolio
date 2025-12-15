@@ -35,14 +35,12 @@ export function LanguageSwitcher() {
   return (
     <button
       onClick={switchLanguage}
-      className="flex items-center gap-2 px-3 py-2 rounded-full
-                 bg-muted/50 hover:bg-muted transition-all duration-300
-                 border border-border/50 hover:border-border"
+      className="group flex items-center gap-2 text-sm font-medium transition-all duration-300"
       title={t('toggle')}
       aria-label={t('toggle')}
     >
-      <Globe className="h-4 w-4" />
-      <span className="text-sm font-medium uppercase">
+      <Globe className="h-4 w-4 text-neutral-500 group-hover:text-emerald-400 transition-colors duration-300" />
+      <span className="text-neutral-500 group-hover:text-white transition-colors duration-300 uppercase tracking-wide">
         {locale === 'pt-BR' ? 'EN' : 'PT'}
       </span>
     </button>
