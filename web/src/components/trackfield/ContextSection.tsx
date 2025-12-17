@@ -71,7 +71,7 @@ export function ContextSection() {
               <TypewriterText speed={50}>O Desafio</TypewriterText>
             </h2>
             <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
-              Como um processo manual estava travando a operação de 300+ franquias.
+              Como um processo manual estava travando a análise de dados de 300+ franquias no back-office.
             </p>
           </motion.div>
 

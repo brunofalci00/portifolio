@@ -431,7 +431,7 @@ function PhaseTechStack() {
     >
       <div className="text-center mb-8">
         <h3 className="text-xl font-medium text-white mb-2">
-          Fase 4: Construindo a infraestrutura full-stack
+          Fase 4: Construindo a infraestrutura (n8n + Supabase + IA)
         </h3>
         <p className="text-neutral-400 max-w-2xl mx-auto">
           Com o fluxo desenhado e a copy pronta, hora de construir a infraestrutura técnica.

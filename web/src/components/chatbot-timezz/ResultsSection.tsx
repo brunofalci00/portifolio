@@ -362,7 +362,7 @@ export function ResultsSection() {
                     />
                   ))}
                 </div>
-                <div className="text-xs text-neutral-500 text-center">10% → 25% (+150%)</div>
+                <div className="text-xs text-neutral-500 text-center">10% → 25% (+15 pontos)</div>
               </div>
 
               {/* Cobertura de Dados */}

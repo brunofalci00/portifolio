@@ -155,8 +155,8 @@ export function HeroSection() {
               className="p-5 rounded-xl bg-neutral-900/60 backdrop-blur-sm ring-1 ring-white/10"
             >
               <p className="text-neutral-400 leading-relaxed text-sm sm:text-base">
-                Construí um{" "}
-                <span className="text-white font-medium">chatbot full-stack</span> para
+                Desenvolvi um{" "}
+                <span className="text-white font-medium">chatbot com automações low-code</span> para
                 automatizar o primeiro contato com leads B2B — respondendo dúvidas
                 repetitivas, coletando{" "}
                 <span className="text-emerald-400">dados estruturados</span> e qualificando

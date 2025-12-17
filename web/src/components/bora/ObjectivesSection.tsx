@@ -10,7 +10,7 @@ const metasCurto = [
     icon: Clock,
   },
   {
-    title: "100 usuários orgânicos",
+    title: "80 usuários orgânicos",
     body: "Aquisição orgânica inicial para provar tração com custo zero.",
     icon: Users,
   },
@@ -75,7 +75,7 @@ export function ObjectivesSection() {
               className="text-neutral-400 text-lg leading-relaxed"
             >
               O objetivo é validar rápido: lançar o PWA em menos de 1 mês, adquirir os
-              100 primeiros usuários organicamente e manter retenção mínima de
+              80 primeiros usuários organicamente e manter retenção mínima de
               44%. Em seguida, preparar o terreno para 1000+ usuários.
             </motion.p>
 

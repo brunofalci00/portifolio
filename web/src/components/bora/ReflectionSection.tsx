@@ -15,7 +15,7 @@ const reflexao = {
       icon: Trophy,
     },
     {
-      text: "Mostrar que pessoas usariam o que eu construí (100+ usuários, 44% voltando).",
+      text: "Mostrar que pessoas usariam o que eu construí (80+ usuários, 44% voltando).",
       icon: CheckCircle,
     },
     {
@@ -85,7 +85,7 @@ export function ReflectionSection() {
               className="absolute -bottom-6 -right-6 p-4 rounded-2xl bg-emerald-500/20 ring-1 ring-emerald-500/30 backdrop-blur-sm"
             >
               <p className="text-3xl font-display font-light text-emerald-400">
-                100+
+                80+
               </p>
               <p className="text-sm text-emerald-400/80">usuários reais</p>
             </motion.div>

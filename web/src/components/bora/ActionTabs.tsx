@@ -72,7 +72,7 @@ const stackTecnica = [
 const gtm = [
   {
     title: "Aquisição orgânica",
-    body: "Conteúdo orgânico e programa de afiliados para 100+ usuários em 26 dias (CAC zero).",
+    body: "Conteúdo orgânico e programa de afiliados para 80+ usuários em 26 dias (CAC zero).",
     icon: Megaphone,
   },
   {

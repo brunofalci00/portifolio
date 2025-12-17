@@ -30,7 +30,7 @@ const metadata = [
     value: "React, TypeScript, Supabase, Vercel, shadcn/ui",
     icon: Code2,
   },
-  { label: "Status", value: "Live com 100+ usuários ativos", icon: CheckCircle },
+  { label: "Status", value: "Live com 80+ usuários ativos", icon: CheckCircle },
   { label: "Última atualização", value: "Dezembro 2024", icon: Clock },
 ];
 

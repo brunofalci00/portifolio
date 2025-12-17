@@ -82,7 +82,7 @@ export function HeroSection() {
               className="font-display text-2xl sm:text-3xl lg:text-4xl font-light text-white leading-tight tracking-tight"
             >
               Automatizando{" "}
-              <span className="text-emerald-400">80% da consolidação</span> de dados em 300+
+              <span className="text-emerald-400">80% da consolidação centralizada</span> de dados de 300+
               franquias
             </motion.h1>
 

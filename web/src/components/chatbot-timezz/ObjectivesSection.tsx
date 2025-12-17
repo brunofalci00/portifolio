@@ -398,7 +398,7 @@ function FullStackOwnership() {
       <div className="flex items-center justify-between flex-wrap gap-4">
         <h4 className="text-lg font-medium text-white flex items-center gap-2">
           <Wrench className="w-5 h-5 text-emerald-400" />
-          100% Full-Stack Ownership
+          Ownership Completo (Design + Prompts + Automações)
         </h4>
         <span className="px-3 py-1 rounded-full bg-emerald-500/10 ring-1 ring-emerald-500/20 text-emerald-400 text-xs">
           Nenhum budget, apenas skills

@@ -93,7 +93,7 @@ export function ResultsSection() {
                 icon: Zap,
                 title: "Automação",
                 value: "80%",
-                desc: "do processo",
+                desc: "do processo (coleta, padronização, consolidação)",
               },
               {
                 icon: Clock,

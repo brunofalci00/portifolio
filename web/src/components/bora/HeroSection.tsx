@@ -7,7 +7,7 @@ import { Users, CheckCircle, Clock } from "lucide-react";
 import { ParallaxElement } from "@/components/scroll/ParallaxElement";
 
 const heroStats = [
-  { label: "Usuários Ativos", value: "100+", icon: Users },
+  { label: "Usuários Ativos", value: "80+", icon: Users },
   { label: "Retenção", value: "44%", icon: CheckCircle },
   { label: "Time-to-Market", value: "26 dias", icon: Clock },
 ];
@@ -77,7 +77,7 @@ export function HeroSection() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="font-display text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-light text-white leading-[1.1]"
               >
-                Bora: <span className="text-emerald-400">100 usuários</span> usando
+                Bora: <span className="text-emerald-400">80 usuários</span> usando
                 um app que eu criei do zero em 26 dias
               </motion.h1>
 
@@ -97,7 +97,7 @@ export function HeroSection() {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="text-neutral-500"
               >
-                Apps de hábitos costumam ser complicados demais. Eu queria criar
+                Apps de hábitos costumam ser complicados demais. Com menos de um mês, consegui <span className="text-white font-medium">80+ usuários orgânicos</span> provando a tração. Eu queria criar
                 algo diferente: simples, bonito e que realmente ajudasse as
                 pessoas. O resultado? Mais de 100 usuários usando em menos de um mês.
               </motion.p>
